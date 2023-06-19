@@ -1,19 +1,22 @@
 import React from 'react';
 import './Toggle.css';
 
-class Toggle extends React.Component {
-  render() {
-    return (
-        <div><div class="switch">
-        <input type="checkbox" class="switch__input" id="Switch"/>
-        <label class="switch__label" for="Switch">
-            <span class="switch__indicator"></span>
-            <span class="switch__decoration"></span>
-        </label>
-    </div></div>
-        
-    );
-  }
-}
+const Toggle = ({ toggleTheme, isChecked }) => {
+  return (
+    <div className="switch">
+      <input
+        type="checkbox"
+        className="switch__input"
+        id="Switch"
+        checked={isChecked}
+        onChange={toggleTheme}
+      />
+      <label className="switch__label" htmlFor="Switch">
+        <span className="switch__indicator"></span>
+        <span className="switch__decoration"></span>
+      </label>
+    </div>
+  );
+};
 
 export default Toggle;

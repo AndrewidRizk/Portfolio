@@ -1,46 +1,63 @@
-// App.js
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import './Toggle.css';
 import HTMLContent from './HTMLContent';
 import Shooting from './Shooting';
 import Toggle from './Toggle';
+import './clouds.css'
 
-
-
-
-function App() {
+export function Night() {
   return (
-    <div className="App"> 
+    <div className="App">
       <HTMLContent />
       <Title />
       <Shooting/>
-      <div><Toggle /></div>
+      
     </div>
   );
 }
-export function App2()
+
+export function Day() {
+  return (
+    <div >
+      <Cloud />
+    </div>
+  );
+}
+export function Cloud()
 {
   return(
-  <div>App2</div>
-    );
+    <div className="container">
+      <div id="cloud-intro"></div>
+    </div>
+  );
+  
 }
-
 
 export function Title() {
   return (
-    <div class="text title typewriter">
-      <text >
-        
-          {`Hello, Welcome to my website.`} 
-          {`\n`}
-          {`I'm Andrew Rizk, Fullstack Developer!`}
-       
+    <div className="text title typewriter">
+      <text>
+        Hello, Welcome to my website.
+        I'm Andrew Rizk, Fullstack Developer!
       </text>
-      
-  </div>
+    </div>
   );
 }
 
+export default function App() {
+  const [isNightTheme, setIsNightTheme] = useState(false);
 
-export default App;
+  const toggleTheme = () => {
+    setIsNightTheme(!isNightTheme);
+  };
+
+  return (
+    <div className={isNightTheme ? 'night-theme' : 'day-theme'}>
+      {isNightTheme ? < Day/> : <Night />}
+      <div>
+        <Toggle toggleTheme={toggleTheme} isChecked={isNightTheme} />
+      </div>
+    </div>
+  );
+}
