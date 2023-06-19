@@ -24,21 +24,7 @@
   color: white;
 }
 
-.title{
-  background-color: rgba(56, 50, 50, 0.2); /* Gray color with 50% opacity */
-  color: white;
-  font-size: x;
-  width: 200px; /* Adjust the width as per your requirement */
-  height: 200px; /* Adjust the height as per your requirement */
-  position: absolute;
-  left: 20%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
-}
+
 
 .App-link {
   color: #61dafb;
@@ -53,4 +39,49 @@
   }
 }
 
-/** Toggle switch moon to sun */
+/** title switch moon to sun */
+
+.title{
+  background-color: rgba(7, 7, 7, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 10px;
+  width: 500px; /* Adjust the width as per your requirement */
+  height: 100px; /* Adjust the height as per your requirement */
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter text {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}

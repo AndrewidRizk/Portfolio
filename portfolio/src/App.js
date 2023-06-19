@@ -5,14 +5,13 @@ import './Toggle.css';
 import HTMLContent from './HTMLContent';
 import Shooting from './Shooting';
 import Toggle from './Toggle';
-import Typing from 'react-typing-animation';
 
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
       <HTMLContent />
       <Title />
       <Shooting/>
@@ -23,11 +22,16 @@ function App() {
 
 export function Title() {
   return (
-    <div className='title'>
-      <Typing speed={100} hideCursor={true}>
-        <span>Andrew Rizk</span>
-      </Typing>
-    </div>
+    <div class="text title typewriter">
+      <text >
+        
+          {`Hello, Welcome to my website.`} 
+          {`\n`}
+          {`I'm Andrew Rizk, Fullstack Developer!`}
+       
+      </text>
+      
+  </div>
   );
 }
 
