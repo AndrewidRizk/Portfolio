@@ -19,6 +19,13 @@ function App() {
     </div>
   );
 }
+export function App2()
+{
+  return(
+  <div>App2</div>
+    );
+}
+
 
 export function Title() {
   return (
