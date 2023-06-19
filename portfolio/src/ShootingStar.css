@@ -1,12 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   overflow: hidden;
 }
-section{
+
+section {
   position: absolute;
   top: 0;
   left: 0;
@@ -16,28 +18,29 @@ section{
   background-size: cover;
   animation: animateBg 50s linear infinite;
 }
+
 @keyframes animateBg {
-  0%,100%
-  {
-      transform:scale(1);
+  0%, 100% {
+    transform: scale(1);
   }
-  50%
-  {
-      transform:scale(1.2);
-  }
+  50% {
+    transform: scale(1.2);
+  } 
 }
-span{
-  position: absolute;
+
+section span {
+  position: absolute; 
   top: 50%;
   left: 50%;
   width: 4px;
   height: 4px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
-  animation:  animate 100s linear infinite;
+  box-shadow: 1 1 1 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+  animation: animateStar 100s linear infinite;
 }
-span::before{
+
+section span::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -46,55 +49,49 @@ span::before{
   height: 1px;
   background: linear-gradient(90deg, #fff, transparent);
 }
-@keyframes animate {
-  0%
-  {
-      transform: rotate(315deg) translateX(0);
-      opacity: 1;
-  }
-  70%
-  {
-      opacity: 1;
 
+@keyframes animateStar {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
   }
-  100%
-  {
-      transform: rotate(315deg) translateX(-1500px);
-      opacity: 0;
-
+  70% {
+    opacity: 1;
   }
-  
+  100% {
+    transform: rotate(315deg) translateX(-1500px);
+    opacity: 0;
+  }
 }
-span:nth-child(1) {
+
+section span:nth-child(1) {
   top: 0;
   right: 0;
   left: initial;
-  animation-delay: 2s; /* Delay for the first star */
+  animation-delay: -2s; /* Delay for the first star */
   animation-duration: 6s; /* Duration for the first star */
 }
 
-span:nth-child(2) {
+section span:nth-child(2) {
   top: 0;
   right: 400px;
   left: initial;
-  animation-delay: 4s; /* Delay for the second star */
+  animation-delay: -4s; /* Delay for the second star */
   animation-duration: 8s; /* Duration for the second star */
 }
 
-span:nth-child(3) {
+section span:nth-child(3) {
   top: 0px;
   right: 700px;
   left: initial;
-  animation-delay: 6s; /* Delay for the third star */
+  animation-delay: -6s; /* Delay for the third star */
   animation-duration: 10s; /* Duration for the third star */
 }
 
-span:nth-child(4) {
+section span:nth-child(4) {
   top: 0px;
   right: 1000px;
   left: initial;
-  animation-delay: 8s; /* Delay for the fourth star */
-  animation-duration: 12s; /* Duration for the fourth star */
+  animation-delay: -8s; /* Delay for the fourth star */
+  animation-duration: 5s; /* Duration for the fourth star */
 }
-
-
