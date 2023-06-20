@@ -6,6 +6,7 @@ html, body, .container {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  
 }
 
 .container {
@@ -14,17 +15,22 @@ html, body, .container {
 }
 
 .cloud {
-  background: url('./clouds.css') repeat-x;
+  background: url('./clouds2.png') repeat-x;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
   width: 100%;
-  height: 100%;
-  animation: cloudani 30s linear infinite;
+  animation: cloudani 25s linear infinite;
 }
 
 @keyframes cloudani {
-  from {
+  0% {
     background-position: 0 0;
   }
-  to {
+  50% {
     background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
