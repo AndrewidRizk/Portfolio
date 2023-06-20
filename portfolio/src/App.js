@@ -9,7 +9,7 @@ import './clouds.css'
 export function Night() {
   return (
     <div className="App containers">
-      <Navbar />
+      
       <HTMLContent />
       <Title />
       <Shooting/>
@@ -21,7 +21,6 @@ export function Night() {
 export function Day() {
   return (
     <div className='containers' >
-      <Navbar />
       <Cloud />
       
       <Shooting/>
@@ -72,7 +71,6 @@ export function  Navbar()
 			<li>CONTACT ME</li>
 		</ul>
 	</nav>
-  
 </header>
 
 }

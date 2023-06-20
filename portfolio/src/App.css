@@ -226,7 +226,7 @@ body{
 
 
   font-size: 1vw; /* Adjust the font size as per your preference */
-  width: 70vw;
+  width: 50vw;
   height: 10vh;
   
   position: absolute;
@@ -261,7 +261,7 @@ body{
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 86.155% }
+  to { width: 95% }
 }
 
 /* The typewriter cursor effect */
@@ -291,29 +291,4 @@ body{
   background: linear-gradient(454deg, #fff, #fff);
 }
  
-
-
-section {
-	display: grid;
-	place-items: center;
-	height: 100vh;
-	font-size: 32px;
-	font-weight: bold;
-}
-
-.nav {
-	display: flex;
-	align-items: center;
-	position: -webkit-sticky;
-	position: sticky;
-	top: -5px;
-	z-index: 2;
-	height: 70px;
-	min-height: 70px;
-	width: calc(100% - 1.5rem);
-	background-color: #fff;
-	padding: 0 1rem;
-	box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
-}
-
  
