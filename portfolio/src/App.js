@@ -1,19 +1,36 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './Toggle.css';
 import HTMLContent from './HTMLContent';
 import Shooting from './Shooting';
 import Toggle from './Toggle';
 import './clouds.css'
+import Navbar from './Navbar';
+import Projects from './Projects';
+import Skills from './Skills';
+import About from './About';
 
 export function Night() {
   return (
     <div className="App containers">
-      
       <HTMLContent />
       <Title />
       <Shooting/>
-      
+    </div>
+  );
+}
+
+export function NightHome() {
+  return (
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Night />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
     </div>
   );
 }
@@ -22,12 +39,27 @@ export function Day() {
   return (
     <div className='containers' >
       <Cloud />
-      
       <Shooting/>
       <Title1 />
     </div>
   );
 }
+
+export function DayHome() {
+  return (
+    <div >
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Day />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+      
+    </div>
+  );
+}
+
 export function Cloud()
 {
   return(
@@ -60,22 +92,8 @@ export function Title1() {
   );
 }
 
-export function  Navbar()
-{
-  <header>
-	<nav>
-		<ul>
-			<li>ABOUT</li>
-			<li>PROJECTS</li>
-			<li>BLOG</li>
-			<li>CONTACT ME</li>
-		</ul>
-	</nav>
-</header>
 
-}
-
-
+// ... rest of the components
 
 export default function App() {
   const [isNightTheme, setIsNightTheme] = useState(false);
@@ -85,12 +103,11 @@ export default function App() {
   };
 
   return (
-    <div className={isNightTheme ? 'night-theme' : 'day-theme'}>
-      {isNightTheme ? < Day/> : <Night />}
-      <div>
-        <Toggle toggleTheme={toggleTheme} isChecked={isNightTheme} />
+      <div className={isNightTheme ? 'night-theme' : 'day-theme'}>
+        {isNightTheme ? <DayHome /> : <NightHome />}
+        <div>
+          <Toggle toggleTheme={toggleTheme} isChecked={isNightTheme} />
+        </div>
       </div>
-    </div>
   );
 }
-
