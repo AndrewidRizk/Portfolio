@@ -21,15 +21,18 @@ export function Day() {
   return (
     <div >
       <Cloud />
+      
+      <Shooting/>
+      <Title1 />
     </div>
   );
 }
 export function Cloud()
 {
   return(
-    <div className="container">
-      <div id="cloud-intro"></div>
-    </div>
+    <div class="container">
+  <div class="cloud"></div>
+</div>
   );
   
 }
@@ -37,6 +40,17 @@ export function Cloud()
 export function Title() {
   return (
     <div className="text title typewriter">
+      <text>
+        Hello, Welcome to my website.
+        I'm Andrew Rizk, Fullstack Developer!
+      </text>
+    </div>
+  );
+}
+
+export function Title1() {
+  return (
+    <div className="text title1 typewriter">
       <text>
         Hello, Welcome to my website.
         I'm Andrew Rizk, Fullstack Developer!
