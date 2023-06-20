@@ -5,69 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding:0;
+  box-sizing: border-box;
   background-color: #000;
   color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-/* Customize the header */
-header {
-  background-color: #252526;
-  color: #ffffff;
-  padding: 20px;
-}
-
-/* Style the navigation bar */
-nav {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 10px;
-}
-
-/* Style the links in the navigation bar */
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
-/* Style the main content section */
-main {
-  padding: 20px;
-}
-
-/* Customize buttons */
-button {
-  background-color: #555555;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Customize cards or sections */
-.card {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-/* Customize code snippets */
-.code {
-  background-color: #1e1e1e;
-  color: #d4d4d4;
-  padding: 10px;
-}
-
-/* Customize footer */
-footer {
-  background-color: #252526;
-  color: #ffffff;
-  padding: 20px;
-}

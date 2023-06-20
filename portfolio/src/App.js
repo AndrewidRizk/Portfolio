@@ -8,7 +8,8 @@ import './clouds.css'
 
 export function Night() {
   return (
-    <div className="App">
+    <div className="App containers">
+      <Navbar />
       <HTMLContent />
       <Title />
       <Shooting/>
@@ -19,7 +20,8 @@ export function Night() {
 
 export function Day() {
   return (
-    <div >
+    <div className='containers' >
+      <Navbar />
       <Cloud />
       
       <Shooting/>
@@ -40,9 +42,9 @@ export function Cloud()
 export function Title() {
   return (
     <div className="text title typewriter">
-      <text>
+      <text className=''>
         Hello, Welcome to my website.
-        I'm Andrew Rizk, Fullstack Developer!
+        I'm Andrew Rizk, Fullstack Developer 😁! 
       </text>
     </div>
   );
@@ -51,13 +53,31 @@ export function Title() {
 export function Title1() {
   return (
     <div className="text title1 typewriter">
-      <text>
+      <text className=''>
         Hello, Welcome to my website.
-        I'm Andrew Rizk, Fullstack Developer!
+        I'm Andrew Rizk, Fullstack Developer 😁! 
       </text>
     </div>
   );
 }
+
+export function  Navbar()
+{
+  <header>
+	<nav>
+		<ul>
+			<li>ABOUT</li>
+			<li>PROJECTS</li>
+			<li>BLOG</li>
+			<li>CONTACT ME</li>
+		</ul>
+	</nav>
+  
+</header>
+
+}
+
+
 
 export default function App() {
   const [isNightTheme, setIsNightTheme] = useState(false);
@@ -75,3 +95,4 @@ export default function App() {
     </div>
   );
 }
+

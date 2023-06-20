@@ -48,13 +48,13 @@ body{
 
 /** title switch moon to sun */
 
-.title{
+.title {
   background-color: rgba(7, 7, 7, 0.8); /* Gray color with 50% opacity */
   color: white;
-  font-size: 10px;
-  width: 500px; /* Adjust the width as per your requirement */
-  height: 100px; /* Adjust the height as per your requirement */
-  
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
   position: absolute;
   left: 50%;
   top: 50%;
@@ -65,13 +65,13 @@ body{
   border-radius: 30px; /* Adjust the radius to make it more or less rounded */
 }
 
-.title1{
-  background-color: rgba(37, 117, 255, 0.7); /* Gray color with 50% opacity */
-  color: yellow;
-  font-size: 10px;
-  width: 500px; /* Adjust the width as per your requirement */
-  height: 100px; /* Adjust the height as per your requirement */
-  
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
   position: absolute;
   left: 50%;
   top: 50%;
@@ -80,6 +80,165 @@ body{
   align-items: center;
   justify-content: center;
   border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+.title {
+  background-color: rgba(7, 7, 7, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+.title {
+  background-color: rgba(7, 7, 7, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+.title {
+  background-color: rgba(7, 7, 7, 0.8);
+  color: white;
+  font-size: 1.2vw; /* Adjust the font size as per your preference */
+  width: 90vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8);
+  color: white;
+  font-size: 1.2vw; /* Adjust the font size as per your preference */
+  width: 90vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
+}
+.title {
+  background-color: rgba(7, 7, 7, 0.8);
+  color: white;
+  font-size: 1vw; /* Adjust the font size as per your preference */
+  width: 50vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8);
+  color: white;.title {
+  background-color: rgba(7, 7, 7, 0.8);
+  color: white;
+  font-size: 1vw; /* Adjust the font size as per your preference */
+  width: 50vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+
+  font-size: 1vw; /* Adjust the font size as per your preference */
+  width: 70vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
 }
 
 
@@ -102,7 +261,7 @@ body{
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 86.155% }
 }
 
 /* The typewriter cursor effect */
@@ -110,3 +269,51 @@ body{
   from, to { border-color: transparent }
   50% { border-color: white }
 }
+
+.containers
+{
+  width:100%;
+  height: 100vh;
+  overflow-y:scroll;
+  scroll-snap-type: y mandatory ;
+}
+
+
+.slides
+{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  gap: 50px;
+  color:#fff;
+  background: linear-gradient(454deg, #fff, #fff);
+}
+ 
+
+
+section {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: -5px;
+	z-index: 2;
+	height: 70px;
+	min-height: 70px;
+	width: calc(100% - 1.5rem);
+	background-color: #fff;
+	padding: 0 1rem;
+	box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+}
+
+ 
