@@ -49,13 +49,15 @@ export function DayHome() {
   return (
     <div >
       <Navbar />
+      <div className="container">
+
       <Routes>
         <Route path="/" element={<Day />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-      
+      </div>
     </div>
   );
 }
@@ -104,10 +106,12 @@ export default function App() {
 
   return (
       <div className={isNightTheme ? 'night-theme' : 'day-theme'}>
+        
         {isNightTheme ? <DayHome /> : <NightHome />}
         <div>
           <Toggle toggleTheme={toggleTheme} isChecked={isNightTheme} />
         </div>
       </div>
+      
   );
 }
