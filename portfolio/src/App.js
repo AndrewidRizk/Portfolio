@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './Toggle.css';
@@ -6,10 +6,16 @@ import HTMLContent from './HTMLContent';
 import Shooting from './Shooting';
 import Toggle from './Toggle';
 import './clouds.css'
-import Navbar from './Navbar';
-import Projects from './Projects';
-import Skills from './Skills';
-import About from './About';
+
+import NavBar from "./components/NavBar";
+import { Home } from "./components/Pages/Home";
+import { About } from "./components/Pages/About";
+import { Blog } from "./components/Pages/Blog";
+import { Contact } from "./components/Pages/Contact";
+
+
+
+
 
 export function Night() {
   return (
@@ -24,13 +30,17 @@ export function Night() {
 export function NightHome() {
   return (
     <div>
-      <Navbar />
+      <Router>
+      <NavBar />
       <Routes>
+        
         <Route path="/" element={<Night />} />
         <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
+      </Router>
     </div>
   );
 }
@@ -48,15 +58,20 @@ export function Day() {
 export function DayHome() {
   return (
     <div >
-      <Navbar />
       <div className="container">
-
+      <Router>
+      <NavBar />
       <Routes>
+      
+
         <Route path="/" element={<Day />} />
         <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+
+
       </Routes>
+      </Router>
       </div>
     </div>
   );
@@ -114,4 +129,4 @@ export default function App() {
       </div>
       
   );
-}
+} 
