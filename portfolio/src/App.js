@@ -6,9 +6,7 @@ import HTMLContent from './HTMLContent';
 import Shooting from './Shooting';
 import Toggle from './Toggle';
 import './clouds.css'
-
 import NavBar from "./components/NavBar";
-import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { Blog } from "./components/Pages/Blog";
 import { Contact } from "./components/Pages/Contact";
