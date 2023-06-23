@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?Open+Sans&display=swap');
+
 .nav-container {
   background-color: #1f5156;
-  height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.6rem;
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
   border-radius: 25px;
   width: 90%; /* Adjust the width as desired */
   max-width: 40vw;
-  top: calc(50% + 20vh); /* Adjust the value as desired */
   font-family: monospace;
   color: #fff;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -20,9 +20,6 @@
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
 }
-
-/* Rest of your CSS code... */
-
 
 .nav-container .nav-menu {
   overflow: hidden; /* Add this to hide overflowing elements */
@@ -32,35 +29,15 @@
   width: 100%; /* Update the width to ensure the links stay within the container */
 }
 
-@media screen and (max-width: 200px) {
-  /* Rest of the media query styles */
-}
-
-
-.nav-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 40vw; /* Adjust the width as desired */
-  height: 8vh; /* Update the height to match the container */
-  margin: 0 auto; /* Center the nav horizontally */
-}
-
-.nav-logo {
-  color: #f5b921;
-  align-items: center;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
 .nav-menu {
   display: flex;
   list-style: none;
   max-width: 40vw;
   text-align: center;
   margin-right: 0.5rem;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+  top:0px;
 }
 
 .nav-links {
@@ -71,8 +48,17 @@
   border-bottom: 3px solid transparent;
 }
 
-.fa-code {
-  margin-left: 1rem;
+.nav-menu .links {
+  list-style: none;
+  display: flex;
+  color: #d9d2c3;
+  cursor: pointer;
+}
+
+.nav .links li {
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .nav-item {
@@ -82,8 +68,8 @@
 
 .nav-item:after {
   content: "";
-  display: block;
-  height: 3px;
+  display: flex;
+  height: 1px;
   width: 0;
   background: transparent;
   transition: width 0.7s ease, background-color 0.5s ease;
@@ -103,50 +89,55 @@
   display: none;
 }
 
-@media screen and (max-width: 200px) {
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    border-top: 1px solid #fff;
-    position: absolute;
-    top: 35px; /* Update the top position to match the container height */
-    left: -110%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
 
-  .nav-menu.active {
-    background: #1f5156;
-    left: 0px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  .nav-item .active {
-    color: #ffdd40;
-    border: none;
-  }
-
-  .nav-links {
-    padding: 1.5rem;
-    width: 100%;
-    display: table;
-  }
-
-  .nav-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #ffdd40;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
+.wrapper{
+  width: 40%;
+  max-width: 1440px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 30px;
+  background-color: #01061D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+}
+
+.navbar .logo{
+  color: #D9D2C3;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.navbar .links{
+  list-style: none;
+  display: flex;
+  color: #D9D2C3;
+  cursor: pointer;
+}
+
+.navbar .links li{
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
 
 .navbar .toggle-icon{
   display: none

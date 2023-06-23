@@ -16,17 +16,21 @@ function NavBar() {
   }
 
 
+
   const [click, setClick] = useState(false);
 
-
   const handleClick = () => setClick(!click);
+
+
+  
   return (
-    <nav className={toggle?'navbar expanded':'navbar'}>
-      <nav className="navbar">
-        <div className="nav-container">
 
+    <nav className={toggle?'  expanded ':'nav-menu'}>
 
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <div className="nav-container wrapper header">
+          
+        <ul className='links'>
+
             <li className="nav-item">
               <NavLink
                 exact
@@ -38,6 +42,7 @@ function NavBar() {
                 Home
               </NavLink>
             </li>
+
             <li className="nav-item">
               <NavLink
                 exact
@@ -49,6 +54,7 @@ function NavBar() {
                 About
               </NavLink>
             </li>
+
             <li className="nav-item">
               <NavLink
                 exact
@@ -60,6 +66,7 @@ function NavBar() {
                 Blog
               </NavLink>
             </li>
+
             <li className="nav-item">
               <NavLink
                 exact
@@ -71,17 +78,14 @@ function NavBar() {
                 Contact Us
               </NavLink>
             </li>
-          </ul>
-          <div className="nav-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-          </div>
+            
+            <div className='toggle-icon' onClick={handleToggle}>
+              {toggle?<Icon icon={x} size={28}/>:<Icon icon={menu} size={30}/>}
+            </div>
 
-          <div className='toggle-icon' onClick={handleToggle}>
-              {toggle?<Icon icon={x} size={28}/>:<Icon icon={menu} size={28}/>}
-           </div>
+            </ul>
 
         </div>
-      </nav>
     </nav>
   );
 }

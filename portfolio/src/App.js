@@ -1,15 +1,16 @@
 import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import './Toggle.css';
+import './Styles/App.css';
+import './Styles/Toggle.css';
 import HTMLContent from './HTMLContent';
 import Shooting from './Shooting';
 import Toggle from './Toggle';
-import './clouds.css'
+import './Styles/clouds.css'
 import NavBar from "./components/NavBar";
 import { About } from "./components/Pages/About";
 import { Blog } from "./components/Pages/Blog";
 import { Contact } from "./components/Pages/Contact";
+
 
 
 
@@ -57,6 +58,7 @@ export function DayHome() {
   return (
     <div >
       <div className="container">
+        
       <Router>
       <NavBar />
       <Routes>
@@ -118,6 +120,8 @@ export default function App() {
   };
 
   return (
+    
+    
       <div className={isNightTheme ? 'night-theme' : 'day-theme'}>
         
         {isNightTheme ? <DayHome /> : <NightHome />}
@@ -128,3 +132,4 @@ export default function App() {
       
   );
 } 
+
