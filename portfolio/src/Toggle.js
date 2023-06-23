@@ -1,5 +1,5 @@
 import React from 'react';
-import './Toggle.css';
+import './Styles/Toggle.css';
 
 const Toggle = ({ toggleTheme, isChecked }) => {
   return (

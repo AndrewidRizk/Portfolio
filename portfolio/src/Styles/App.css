@@ -1,0 +1,280 @@
+body{
+  padding:0;
+  margin:0;
+  
+}
+
+.App {
+  text-align: center;
+  background:#0d0d0e;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/** title switch moon to sun */
+
+.title {
+  background-color: rgba(7, 7, 7, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+.title {
+  background-color: rgba(7, 7, 7, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+.title {
+  background-color: rgba(7, 7, 7, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8); /* Gray color with 50% opacity */
+  color: white;
+  font-size: 3.5vw; /* Relative font size based on viewport width */
+  width: 90vw; /* 90% of the viewport width */
+  height: 10vh; /* Adjust the height as per your requirement */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px; /* Adjust the radius to make it more or less rounded */
+}
+.title {
+  background-color: rgba(7, 7, 7, 0.8);
+  color: white;
+  font-size: 1.2vw; /* Adjust the font size as per your preference */
+  width: 90vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8);
+  color: white;
+  font-size: 1.2vw; /* Adjust the font size as per your preference */
+  width: 90vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
+}
+.title {
+  background-color: rgba(7, 7, 7, 0.8);
+  color: white;
+  font-size: 1vw; /* Adjust the font size as per your preference */
+  width: 50vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.title1 {
+  background-color: rgba(156, 89, 245, 0.8);
+  color: white;.title {
+  background-color: rgba(7, 7, 7, 0.8);
+  color: white;
+  font-size: 1vw; /* Adjust the font size as per your preference */
+  width: 50vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+
+  font-size: 1vw; /* Adjust the font size as per your preference */
+  width: 50vw;
+  height: 10vh;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-wrap: wrap; /* Allow text to wrap within the element */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter text {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 95% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-y:auto; /* Use "auto" instead of "scroll" to show the scrollbar only when needed */
+  scroll-snap-type: y mandatory;
+}
+
+.slides
+{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  gap: 50px;
+  color:#fff;
+  background: linear-gradient(454deg, #fff, #fff);
+}
+ 
+ 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './stars.css';
+import './Styles/stars.css';
 
 class HTMLContent extends React.Component {
     render() {

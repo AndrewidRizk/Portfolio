@@ -1,5 +1,5 @@
 import React from 'react';
-import './ShootingStar.css';
+import './Styles/ShootingStar.css';
 
 class Shooting extends React.Component {
   render() {
