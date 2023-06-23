@@ -8,8 +8,9 @@ import Toggle from './Toggle';
 import './Styles/clouds.css'
 import NavBar from "./components/NavBar";
 import { About } from "./components/Pages/About";
-import { Blog } from "./components/Pages/Blog";
+import { Skills } from "./components/Pages/Skills";
 import { Contact } from "./components/Pages/Contact";
+import { Projects } from "./components/Pages/Projects";
 
 
 
@@ -35,7 +36,8 @@ export function NightHome() {
         
         <Route path="/" element={<Night />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
 
       </Routes>
@@ -66,7 +68,8 @@ export function DayHome() {
 
         <Route path="/" element={<Day />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
 
 
