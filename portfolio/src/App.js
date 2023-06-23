@@ -28,7 +28,7 @@ export function Night() {
 
 export function NightHome() {
   return (
-    <div>
+    <div className='starScreen'>
       <Router>
       <NavBar />
       <Routes>
