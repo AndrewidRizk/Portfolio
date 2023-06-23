@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
+import "../Styles/NavBar.css";
 import {Icon} from 'react-icons-kit'
 import {menu} from 'react-icons-kit/feather/menu'
 import {x} from 'react-icons-kit/feather/x'
