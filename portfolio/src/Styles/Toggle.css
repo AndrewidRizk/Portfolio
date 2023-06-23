@@ -190,3 +190,10 @@ body {
     }
   }
 }
+
+
+
+@media (max-width: 768px) {
+  /* CSS styles for phones (screen width up to 768px) */
+  /* Add your phone-specific styles here */
+}
