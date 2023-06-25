@@ -2,7 +2,9 @@ import React, { useRef } from "react";
 import { Link } from "react-scroll";
 import ScrollToTop from "./components/ScrollToTop";
 import "./Styles/About.css";
-import { BiDotsVerticalRounded } from "react-icons/bi";
+import { BsFillBookFill } from "react-icons/bs";
+import { TfiHummer } from "react-icons/tfi";
+import { FaRegGrinAlt } from "react-icons/fa";
 
 export const About = () => {
   const Introduction = useRef(null);
@@ -23,20 +25,20 @@ export const About = () => {
       <div className="Container">
         <ul>
           <li onClick={() => scrollToSection(Introduction)} className="link nav-item">
-            Introduction
+            <FaRegGrinAlt />
           </li>
           <li>.</li>
           <li>.</li>
 
           <li onClick={() => scrollToSection(Education)} className="link nav-item">
-            Education
+          <BsFillBookFill />
           </li>
 
           <li>.</li>
           <li>.</li>
 
           <li onClick={() => scrollToSection(Experiance)} className="link nav-item">
-            Experiance
+            <TfiHummer />
           </li>
           
         </ul>
