@@ -29,9 +29,9 @@ function NavBar() {
 
         <div className="nav-container wrapper header">
           
-        <ul className='links'>
+        <ul className='links dropdown'>
 
-            <li className="nav-item">
+            <li className="nav-item ">
               <NavLink
                 exact
                 to="/"
@@ -43,7 +43,7 @@ function NavBar() {
               </NavLink>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item dropbtn">
               <NavLink
                 exact
                 to="/about"
@@ -53,6 +53,7 @@ function NavBar() {
               >
                 About Me
               </NavLink>
+              
             </li>
 
             <li className="nav-item">
