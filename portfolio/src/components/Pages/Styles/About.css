@@ -1,0 +1,161 @@
+@media (min-width: 769px) {
+.About {
+    height: 100vh; /* Set a fixed height */
+    overflow: auto; /* Add scrollbars when content exceeds the height */
+  }
+  .starScreen .Container {
+    background-color: #2B2B2B;
+    display: flex;
+    flex-direction: column; /* Set the flex-direction to column */
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start (top) of the navbar */
+    font-size: 0.8rem;
+    position: fixed;
+    left: 20px; /* Adjust the position to the desired distance from the left side */
+    top: 50%;
+    transform: translateY(-50%); /* Center the navbar vertically */
+    z-index: 20;
+    border-radius: 25px;
+    width: 124px; /* Adjust the width as needed */
+    max-height: 80vh; /* Limit the height of the navbar to 80% of the viewport height */
+    font-family: monospace;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 2px solid #5B5B5B;
+    font-weight: bolder;
+  }
+  
+  .starScreen .Container li {
+    display: block; /* Display list items as blocks to stack them vertically */
+    padding: 10px; /* Adjust the padding as desired */
+  }
+
+
+  .Container {
+    background-color: #8FB5F5;
+    display: flex;
+    flex-direction: column; /* Set the flex-direction to column */
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start (top) of the navbar */
+    font-size: 0.8rem;
+    position: fixed;
+    left: 20px; /* Adjust the position to the desired distance from the left side */
+    top: 50%;
+    transform: translateY(-50%); /* Center the navbar vertically */
+    z-index: 20;
+    border-radius: 25px;
+    width: 124px; /* Adjust the width as needed */
+    max-height: 80vh; /* Limit the height of the navbar to 80% of the viewport height */
+    font-family: monospace;
+    color: #1868f1;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 2px solid #347CF8; /* Add the border */
+    font-weight: bolder;
+  }
+  
+  .Container li {
+    display: block; /* Display list items as blocks to stack them vertically */
+    padding: 10px; /* Adjust the padding as desired */
+  }
+
+
+  
+  .Introduction {
+    height: 100%;
+  }
+
+
+  .Education {
+    height: 100%;
+  }
+
+  .Experiance {
+    height: 100%;
+  }
+  
+
+  /* scroll to top button */
+  .top-btn-position {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+  }
+  
+  .top-btn-style {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .top-btn-style:hover {
+    animation: none;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+
+  /* Active and graphics*/
+
+ 
+.link {
+text-decoration: none;
+display: inline;
+padding: 20px 20px;
+font-weight: 700;
+font-size: large;
+cursor: pointer;
+}
+  
+
+.nav-item {
+    line-height: 40px;
+    margin-right: 1rem;
+  }
+  
+  .nav-item:after {
+    content: "";
+    display: flex;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+    
+  }
+  
+   .nav-item:hover:after {
+    width: 100%;
+    background: #1868f1;
+  }
+   .nav-item .active {
+    color: #1868f1;
+    border: 2px solid #1868f1;
+  }
+  
+  .starScreen .nav-item:hover:after {
+    width: 100%;
+    background: #ffdd40;
+    
+  }
+  
+  .starScreen .nav-item .active {
+    color: #ffdd40;
+    border: 2px solid #ffdd40;
+    
+  }
+  
+  .starScreen .nav-item:hover:after {
+    width: 100%;
+    background: white;
+  }
+  .starScreen .nav-item .active {
+    color: white;
+    border: 2px solid white;
+  }
+}
