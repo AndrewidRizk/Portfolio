@@ -6,6 +6,8 @@ import { TfiHummer } from "react-icons/tfi";
 import { FaRegGrinAlt } from "react-icons/fa";
 import Masonry from './components/Introduction.tsx';
 import { FaArrowUp } from "react-icons/fa6";
+import App from './components/Deck/deck.tsx';
+
 
 
 
@@ -117,6 +119,10 @@ export const About = () => {
 
       <div ref={Education} className="Education">
         <h3>Education</h3>
+      </div>
+      <div className="Education">
+        <h1 className='cent' >Certificates</h1>
+        <App />
       </div>
 
       <div ref={Experiance} className="Experiance">
