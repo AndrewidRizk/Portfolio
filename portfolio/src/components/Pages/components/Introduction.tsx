@@ -23,11 +23,20 @@ function Masonry() {
   // Hook5: Form a grid of stacked items using width & columns we got from hooks 1 & 2
   const [heights, gridItems] = useMemo(() => {
     let heights = new Array(columns).fill(0) // Each column gets a height starting with zero
+    const sizeFactor = 0.9; // Adjust the size factor to make the pictures smaller
+    const gap = 10; // Adjust the gap between pictures
+
     let gridItems = items.map((child, i) => {
       const column = heights.indexOf(Math.min(...heights)) // Basic masonry-grid placing, puts tile into the smallest column using Math.min
-      const x = (width / columns) * column // x = container width / number of columns * column index,
-      const y = (heights[column] += child.height / 2) - child.height / 2 // y = it's just the height of the current column
-      return { ...child, x, y, width: width / columns, height: child.height / 2 }
+      const x = (width / columns) * column // x = container width / number of columns * column index
+
+      // Adjust width and height to make pictures smaller
+      const newWidth = (width / columns) * sizeFactor;
+      const newHeight = (child.height * sizeFactor) + gap;
+
+      const y = (heights[column] += newHeight) - newHeight // y = cumulative height of the current column
+
+      return { ...child, x, y, width: newWidth, height: newHeight }
     })
     return [heights, gridItems]
   }, [columns, items, width])
@@ -54,4 +63,3 @@ function Masonry() {
 }
 
 export default Masonry
-

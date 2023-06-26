@@ -29,18 +29,13 @@
     display: block; /* Display list items as blocks to stack them vertically */
     padding: 10px; /* Adjust the padding as desired */
   }
-
-     .icon
-  {
-    size: 3rem;
-    color: rgb(43, 5, 78);
-  }
-
   .starScreen .icon
   {
     size: 3rem;
     color: white;
   }
+
+
 
   .Container {
     background-color: #8FB5F5;
@@ -70,7 +65,15 @@
     padding: 10px; /* Adjust the padding as desired */
   }
 
- 
+  .icon
+  {
+    size: 3rem;
+    color: rgb(43, 5, 78);
+  }
+
+  .photos {
+    height: 125%;
+  }
 
 
   

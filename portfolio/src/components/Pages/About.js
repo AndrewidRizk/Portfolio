@@ -9,11 +9,13 @@ import useMeasure from 'react-use-measure';
 import { useTransition, a } from '@react-spring/web';
 import shuffle from 'lodash.shuffle';
 import Masonry from './components/Introduction.tsx';
+import { FaArrowUp } from "react-icons/fa6";
 
 
 
 
 export const About = () => {
+  const Up = useRef(null);
   const Introduction = useRef(null);
   const Education = useRef(null);
   const Experiance = useRef(null);
@@ -58,13 +60,20 @@ export const About = () => {
     <div className="About">
       <div className="Container">
         <ul>
+
+        <li onClick={() => scrollToSection(Up)} className="link nav-item icon">
+        <FaArrowUp />
+          </li>
+          <li>.</li>
+          <li>.</li>
           <li
             onClick={() => scrollToSection(Introduction)}
             className="link nav-item icon"
             onMouseOver={handleIntroMouseOver}
             onMouseOut={handleIntroMouseOut}
           >
-            <div className="icon-container">
+            
+            <div className="icon-container ">
               <FaRegGrinAlt />
               {isHoveringIntro && <span className="tooltip">{"                               "}Introduction</span>}
             </div>
@@ -100,8 +109,12 @@ export const About = () => {
           </li>
         </ul>
       </div>
+      <div ref={Up} className="photos"> 
+        <Masonry />
+      </div>
+
       <div ref={Introduction} className="Introduction">
-        <h3><Masonry /></h3>
+        <h3>Introduction</h3>
       </div>
 
       <div ref={Education} className="Education">
