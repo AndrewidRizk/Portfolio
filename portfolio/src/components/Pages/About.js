@@ -1,13 +1,9 @@
 import React, { useRef, useMemo } from "react";
 import {useState} from 'react';
-import { Link } from "react-scroll";
 import "./Styles/About.css";
 import { BsFillBookFill } from "react-icons/bs";
 import { TfiHummer } from "react-icons/tfi";
 import { FaRegGrinAlt } from "react-icons/fa";
-import useMeasure from 'react-use-measure';
-import { useTransition, a } from '@react-spring/web';
-import shuffle from 'lodash.shuffle';
 import Masonry from './components/Introduction.tsx';
 import { FaArrowUp } from "react-icons/fa6";
 
@@ -64,48 +60,50 @@ export const About = () => {
         <li onClick={() => scrollToSection(Up)} className="link nav-item icon">
         <FaArrowUp />
           </li>
+
           <li>.</li>
           <li>.</li>
-          <li
-            onClick={() => scrollToSection(Introduction)}
-            className="link nav-item icon"
+          <li onClick={() => scrollToSection(Introduction)} className="link nav-item icon"
             onMouseOver={handleIntroMouseOver}
             onMouseOut={handleIntroMouseOut}
           >
             
-            <div className="icon-container ">
+            <div>
               <FaRegGrinAlt />
               {isHoveringIntro && <span className="tooltip">{"                               "}Introduction</span>}
             </div>
+
           </li>
+
           <li>.</li>
           <li>.</li>
 
           <li
-            onClick={() => scrollToSection(Education)}
-            className="link nav-item icon"
+            onClick={() => scrollToSection(Education)} className="link nav-item icon"
             onMouseOver={handleEduMouseOver}
             onMouseOut={handleEduMouseOut}
           >
-            <div className="icon-container">
+            <div>
               <BsFillBookFill />
               {isHoveringEdu && <span className="tooltip">{"                               "}Education</span>}
             </div>
+            
+
           </li>
 
           <li>.</li>
           <li>.</li>
 
           <li
-            onClick={() => scrollToSection(Experiance)}
-            className="link nav-item icon"
+            onClick={() => scrollToSection(Experiance)} className="link nav-item icon"
             onMouseOver={handleExpMouseOver}
             onMouseOut={handleExpMouseOut}
           >
-            <div className="icon-container">
+            <div >
               <TfiHummer />
               {isHoveringExp && <span className="tooltip">{"                               "}Experiance</span>}
             </div>
+
           </li>
         </ul>
       </div>

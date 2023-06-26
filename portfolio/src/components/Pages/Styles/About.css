@@ -3,6 +3,7 @@
     height: 100vh; /* Set a fixed height */
     overflow: auto; /* Add scrollbars when content exceeds the height */
   }
+
   .starScreen .Container {
     background-color: #2B2B2B;
     display: flex;
@@ -72,7 +73,7 @@
   }
 
   .photos {
-    height: 125%;
+    height: 115%;
   }
 
 
@@ -90,30 +91,6 @@
     height: 100%;
   }
   
-
-  /* scroll to top button */
-  .top-btn-position {
-    position: fixed;
-    bottom: 15px;
-    right: 20px;
-  }
-  
-  .top-btn-style {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 2px solid #333;
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .top-btn-style:hover {
-    animation: none;
-    background-color: #333;
-    color: #fff;
-    border: 2px solid #fff;
-  }
 
 
   /* Active and graphics*/
@@ -178,4 +155,5 @@ cursor: pointer;
     /* Add padding or margin to create space */
     padding-left: 7px;
   }
+  
 }
