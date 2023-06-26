@@ -155,5 +155,12 @@ cursor: pointer;
     /* Add padding or margin to create space */
     padding-left: 7px;
   }
+
+  .cent {
+    position: relative;
+    top: 20px;
+    left: 45%;
+  }
+  
   
 }
