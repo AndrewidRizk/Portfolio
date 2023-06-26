@@ -1,14 +1,13 @@
 import React from "react";
 import "./Styles/Contact.css"
+import ContactMe from './components/ContactMe/ContactMe'
+
 
 export const Contact = () => {
-    
-
   return (
     <div className="app">
       <div className="card-container">
-        <Card />
-        <Card />
+        <ContactMe />
       </div>
     </div>
   );
