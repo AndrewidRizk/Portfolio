@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import AnimatedList from './components/Projects/projElem.js';
+import Proj from "./components/proj/App.tsx";
 
 
 export const Projects = () => {
@@ -8,7 +8,7 @@ export const Projects = () => {
 
   return (
     <div>
-        <AnimatedList />
+      <Proj />
     </div>
   );
 };
