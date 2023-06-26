@@ -7,6 +7,8 @@ import { FaRegGrinAlt } from "react-icons/fa";
 import Masonry from './components/Introduction.tsx';
 import { FaArrowUp } from "react-icons/fa6";
 import App from './components/Deck/deck.tsx';
+import MyTimeline from './components/Time_Line/line';
+
 
 
 
@@ -126,7 +128,7 @@ export const About = () => {
       </div>
 
       <div ref={Experiance} className="Experiance">
-        <h3>Experiance</h3>
+        <MyTimeline />
       </div>
     </div>
   );

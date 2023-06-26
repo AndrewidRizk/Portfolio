@@ -11,6 +11,7 @@ const cards = [
     harvardImage,
     harvardImage,
     harvardImage,
+    
 ]
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
