@@ -4,7 +4,7 @@ import "../Styles/NavBar.css";
 import {Icon} from 'react-icons-kit'
 import {menu} from 'react-icons-kit/feather/menu'
 import {x} from 'react-icons-kit/feather/x'
-
+import { HiOutlineHome } from "react-icons/hi";
 
 
 function NavBar() {
@@ -39,7 +39,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Home
+                <HiOutlineHome/> Home
               </NavLink>
             </li>
 

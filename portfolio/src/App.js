@@ -11,8 +11,7 @@ import { About } from "./components/Pages/About";
 import { Skills } from "./components/Pages/Skills";
 import { Contact } from "./components/Pages/Contact";
 import { Projects } from "./components/Pages/Projects";
-
-
+import { HiOutlineDocumentText } from "react-icons/hi";
 
 
 
@@ -23,6 +22,7 @@ export function Night() {
       <HTMLContent />
       <Title />
       <Shooting/>
+      <Resume />
     </div>
   );
 }
@@ -52,6 +52,7 @@ export function Day() {
       <Cloud />
       <Shooting/>
       <Title1 />
+      <Resume />
     </div>
   );
 }
@@ -135,4 +136,8 @@ export default function App() {
       
   );
 } 
+
+export function Resume() {
+  return <HiOutlineDocumentText className='HiOutlineDocumentText icon' />;
+}
 

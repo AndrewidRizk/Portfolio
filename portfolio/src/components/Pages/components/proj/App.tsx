@@ -4,9 +4,9 @@ import { useTransition, animated, AnimatedProps, useSpringRef } from '@react-spr
 import styles from './styles.module.css'
 
 const pages: ((props: AnimatedProps<{ style: CSSProperties }>) => React.ReactElement)[] = [
-  ({ style }) => <animated.div style={{ ...style }}>A</animated.div>,
-  ({ style }) => <animated.div style={{ ...style}}>B</animated.div>,
-  ({ style }) => <animated.div style={{ ...style}}>C</animated.div>,
+  ({ style }) => <animated.div style={{ ...style }}>Project 1</animated.div>,
+  ({ style }) => <animated.div style={{ ...style}}>Project 2</animated.div>,
+  ({ style }) => <animated.div style={{ ...style}}>Project 3</animated.div>,
 ]
 
 export default function Proj() {

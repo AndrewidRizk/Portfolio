@@ -1,9 +1,21 @@
 import React from "react";
+import "./Styles/Contact.css"
 
 export const Contact = () => {
+    
+
   return (
-    <div>
-      <h1>Contact Us</h1>
+    <div className="app">
+      <div className="card-container">
+        <Card />
+        <Card />
+      </div>
     </div>
   );
+};
+
+
+
+const Card = () => {
+  return <div className="card">This is the card content</div>;
 };

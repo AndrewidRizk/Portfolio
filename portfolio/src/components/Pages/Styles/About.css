@@ -165,5 +165,24 @@ cursor: pointer;
     left: 45%;
   }
   
+  .starScreen .HiOutlineDocumentText{
+    position: fixed;
+    left: 71.5%;
+    top: 0.8%;
+    font-size: 30px; /* Adjust the font size as needed */
+    color: white;
+
+  }
+  .HiOutlineDocumentText{
+    position: fixed;
+    left: 71.5%;
+    top: 0.8%;
+    font-size: 30px; /* Adjust the font size as needed */
+    color: blue;
+  
+  }
+
+
+
   
 }
