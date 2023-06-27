@@ -8,6 +8,7 @@
     margin: auto;
     font-family: inherit;
     perspective: 1000px;
+    
   }
   
   .card-inner2 {
@@ -32,7 +33,7 @@
   
   .card-front2 {
     display: flex;
-    background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
+    background-image: linear-gradient(144deg, #1877f2, #1877f2 60%, #bd6fda);
     align-items: center;
     justify-content: center;
     transform: rotateY(0deg);
@@ -40,7 +41,7 @@
   }
   
   .card-back2 {
-    background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
+    background-image: linear-gradient(144deg, #1877f2, #1877f2 60%, #bd6fda);
     justify-content: center;
     transform: rotateY(180deg);
     border-radius: 20px;
