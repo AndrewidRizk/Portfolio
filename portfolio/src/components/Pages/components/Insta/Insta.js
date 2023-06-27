@@ -1,17 +1,28 @@
 import "./style.css";
 import React from 'react';
 import instaImage from "./insta.jpg";
+import { AiOutlineInstagram } from "react-icons/ai";
+
+
 
 function Insta() {
   return (
-    <div className="card">
-      <div className="card-border-top"></div>
-      <div className="img">
-        <img src={instaImage} alt="Instagram" />
+    <div className="card3">
+        <div class="card-inner">
+        <div class="card-front">
+        <AiOutlineInstagram  className="card-icon2"/>
+         </div>
+     <div class="card-back">
+            <div className="card-border-top"></div>
+            <div className="img">
+                <img src={instaImage} alt="Instagram" />
+            </div>
+            <span>andro_m</span>
+            <p className="job"> Andrew Rizk </p>
+            <button>Follow</button>
+        </div>
+
       </div>
-      <span>andro_m</span>
-      <p className="job"> Andrew Rizk </p>
-      <button>Follow</button>
     </div>
   );
 }

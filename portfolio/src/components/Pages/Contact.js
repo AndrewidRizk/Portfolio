@@ -2,6 +2,8 @@ import React from "react";
 import "./Styles/Contact.css"
 import ContactMe from './components/ContactMe/ContactMe'
 import Insta from './components/Insta/Insta'
+import Face from './components/Face/Face'
+
 
 
 export const Contact = () => {
@@ -10,6 +12,7 @@ export const Contact = () => {
       <div className="card-container">
         <ContactMe />
         <Insta />
+        <Face />
       </div>
     </div>
   );
