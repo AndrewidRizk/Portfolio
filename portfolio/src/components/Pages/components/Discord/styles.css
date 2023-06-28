@@ -44,7 +44,7 @@
     }
 
     .card-back4 {
-        background-image: linear-gradient(144deg,#333333, #333333 100%,#eee6f1);
+        background-image: linear-gradient(144deg,#272727, #272727 100%,#eee6f1);
         justify-content: center;
         transform: rotateY(180deg);
         border-radius: 20px;

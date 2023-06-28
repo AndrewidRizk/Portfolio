@@ -1,6 +1,6 @@
 import "./style.css";
 import React from 'react';
-/*import instaImage from "./insta.jpg";*/
+import Git2 from "./git.png";
 import { FaGithub } from "react-icons/fa";
 
 
@@ -15,10 +15,12 @@ function Git() {
      <div class="card-back5">
             <div className="card-border-top5"></div>
             <div className="img5">
-                <img /*src={instaImage}*/ alt="Git" />
+                <img src={Git2} alt="Git" />
             </div>
-            <span>Andrew Rizk</span>
-            <p className="job5"> androw_m </p>
+            <span>Andrewid Rizk
+</span>
+            <p className="job5"> AndrewidRizk
+ </p>
             <button>Follow</button>
         </div>
 

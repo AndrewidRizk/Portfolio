@@ -50,7 +50,7 @@
     
 
     .card-back5 {
-        background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
+        background-image: linear-gradient(144deg,#222222, #222222 100%,#bd6fda);
         justify-content: center;
         transform: rotateY(180deg);
         border-radius: 20px;
@@ -77,12 +77,12 @@
   }
   
   .card5 .img5 {
-    width: 150px; /* Updated width to match the intrinsic size */
-    height: 150px; /* Updated height to match the intrinsic size */
+    width: 120px; /* Updated width to match the intrinsic size */
+    height: 120px; /* Updated height to match the intrinsic size */
     background: #e8e8e8;
     border-radius: 100%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 35px;
     position: relative;
     overflow: hidden;
   }

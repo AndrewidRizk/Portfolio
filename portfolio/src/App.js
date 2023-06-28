@@ -18,7 +18,7 @@ import { HiOutlineDocumentText } from "react-icons/hi";
 
 export function Night() {
   return (
-    <div className="App containers">
+    <div className="App containers ">
       <HTMLContent />
       <Title />
       <Shooting/>
