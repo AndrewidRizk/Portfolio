@@ -35,16 +35,19 @@
     .card-front5 {
 
         display: flex;
-        background-image: linear-gradient(144deg,white, white 60%,white);
+        background-image: linear-gradient(144deg,black, black 60%,black);
         align-items: center;
         justify-content: center;
         transform: rotateY(0deg);
         border-radius: 20px;
-        border: 2px solid rgb(196, 170, 170); /* Replace "red" with your desired border color */
-
+         /* Add background image */
+        background-image: url('./stars.jpeg');
+        background-size: cover; /* Adjust the background size as needed */
+        background-position: center; /* Center the background image */
         
-
+        
     }
+    
 
     .card-back5 {
         background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
@@ -110,8 +113,7 @@
   
 
   .card-icon5{
-    font-size: 40px;
-    color: black;
+    font-size: 50px;
   }
 
  
