@@ -3,6 +3,7 @@ import "./Styles/Contact.css"
 import ContactMe from './components/ContactMe/ContactMe'
 import Insta from './components/Insta/Insta'
 import Face from './components/Face/Face'
+import Discord from './components/Discord/Discrod'
 
 
 
@@ -13,6 +14,7 @@ export const Contact = () => {
         <ContactMe />
         <Insta />
         <Face />
+        <Discord />
       </div>
     </div>
   );
