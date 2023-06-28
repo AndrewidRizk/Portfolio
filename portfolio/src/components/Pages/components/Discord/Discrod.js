@@ -12,14 +12,16 @@ function Discrod() {
         <div class="card-front4">
         <FaDiscord  className="card-icon4"/> {" "}
          </div>
-     <div class="card-back4">
+            <div class="card-back4">
+            <div className="cover-image">
+                
+            </div>
             <div className="card-border-top4"></div>
             <div className="img4">
                 <img src={DiscordPic} alt="Discord" />
             </div>
             <span>Andrew Maged</span>
-            <p1 className="job4"> andrewmaged </p1>
-            <p className="job4"> Andrewid </p>
+            <p1 className="job4"> andrewmaged#0084 </p1>
             <button>Follow</button>
         </div>
 

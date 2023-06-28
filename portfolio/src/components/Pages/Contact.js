@@ -4,6 +4,8 @@ import ContactMe from './components/ContactMe/ContactMe'
 import Insta from './components/Insta/Insta'
 import Face from './components/Face/Face'
 import Discord from './components/Discord/Discrod'
+import Git from './components/GitHub/Git'
+
 
 
 
@@ -15,6 +17,7 @@ export const Contact = () => {
         <Insta />
         <Face />
         <Discord />
+        <Git />
       </div>
     </div>
   );

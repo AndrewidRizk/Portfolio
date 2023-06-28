@@ -20,8 +20,8 @@ function Face() {
           <div className="img2">
             <img src={faceImage} alt="FaceBook" />
           </div>
-          <span>andro_m</span>
-          <p className="job2">Andrew Rizk</p>
+          <span>Andrew Rizk</span>
+          <p className="job2">andro_m</p>
           <button>Follow</button>
         </div>
       </div>

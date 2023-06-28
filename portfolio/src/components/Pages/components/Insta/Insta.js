@@ -17,8 +17,8 @@ function Insta() {
             <div className="img">
                 <img src={instaImage} alt="Instagram" />
             </div>
-            <span>androw_m</span>
-            <p className="job"> Andrew Rizk </p>
+            <span>Andrew Rizk</span>
+            <p className="job"> androw_m </p>
             <button>Follow</button>
         </div>
 
