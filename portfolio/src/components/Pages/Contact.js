@@ -6,6 +6,7 @@ import Face from './components/Face/Face'
 import Discord from './components/Discord/Discrod'
 import Git from './components/GitHub/Git'
 import Snap from './components/Snap/Snap'
+import LinkedIn from './components/LinkedIn/Linked'
 
 
 
@@ -20,6 +21,7 @@ export const Contact = () => {
         <Discord />
         <Git />
         <Snap />
+        <LinkedIn />
       </div>
     </div>
   );
