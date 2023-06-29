@@ -1,7 +1,7 @@
 import "./styles.css";
 import React from 'react';
 import { FaSnapchatGhost } from "react-icons/fa";
-/*import DiscordPic from "./Discord.jpg";*/
+import Snap2 from "./snap.png";
 
 
 
@@ -18,10 +18,10 @@ function Snap() {
             </div>
             <div className="card-border-top6"></div>
             <div className="img6">
-                <img /*src={DiscordPic}*/ alt="Discord" />
+                <img src={Snap2} alt="Discord" />
             </div>
-            <span>Andrew Maged</span>
-            <p1 className="job6"> andrewmaged#0084 </p1>
+            <span>Andrew Rizk</span>
+            <p1 className="job6"> @andrewrizk3030</p1>
             <button>Follow</button>
         </div>
 
