@@ -7,6 +7,8 @@ import Discord from './components/Discord/Discrod'
 import Git from './components/GitHub/Git'
 import Snap from './components/Snap/Snap'
 import LinkedIn from './components/LinkedIn/Linked'
+import WhatsApp from './components/whats/WhatsApp'
+import Gmail from './components/gmail/Gmail'
 
 
 
@@ -22,6 +24,8 @@ export const Contact = () => {
         <Git />
         <Snap />
         <LinkedIn />
+        <WhatsApp />
+        <Gmail />
       </div>
     </div>
   );
