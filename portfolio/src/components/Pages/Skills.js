@@ -1,9 +1,10 @@
 import React from "react";
+import SideLine from "./components/Time_Line2/App";
 
 export const Skills = () => {
   return (
     <div>
-      <h1>Skills</h1>
+      <SideLine />
     </div>
   );
 };
