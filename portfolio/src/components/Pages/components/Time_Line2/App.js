@@ -20,7 +20,7 @@ const TimelineStep = ({
     setObserver(circleRef.current, someCallback);
   }, []);
 
-  return (
+  return (  
     <>
       <div id={"timeline" + index} ref={timelineRef} className="timeline4" />
       <div className="circleWrapper">
