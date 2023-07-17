@@ -34,7 +34,8 @@ const TimelineStep = ({
 };
 
 const Timeline = ({ setObserver, callback }) => {
-  const images = [
+  const images = [  
+    
     "https://help.apple.com/assets/6152754A4192845C4361C49A/6152754B4192845C4361C4A1/de_DE/d94aa1c4979b25e9ffbda97fcbae219a.png",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png",
     "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
