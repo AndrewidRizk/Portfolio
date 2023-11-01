@@ -1,29 +1,24 @@
 import "./style.css";
 import React from 'react';
-/*import instaImage from "./insta.jpg";*/
-import { AiOutlineInstagram } from "react-icons/ai";
+import { FaSnapchatGhost } from "react-icons/fa";
+import ContactMe from "../ContactMe/ContactMe";
+import { SiGmail } from "react-icons/si";
 
 
 
 function Gmail() {
   return (
-    <div className="card3">
+    <div className="card10">
         <div class="card-inner">
-        <div class="card-front">
-        <AiOutlineInstagram  className="card-icon2"/>
+        <div class="card-front10">
+        <SiGmail  className="card-icon10"/> {" "}
          </div>
-     <div class="card-back">
-            <div className="card-border-top"></div>
-            <div className="img">
-                <img /*src={instaImage}*/ alt="Instagram" />
+            <div class="card-back6">
+            <ContactMe />
             </div>
-            <span>Andrew Rizk</span>
-            <p className="job"> androw_m </p>
-            <button>Follow</button>
         </div>
 
       </div>
-    </div>
   );
 }
 

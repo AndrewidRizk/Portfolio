@@ -64,7 +64,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Skills
+                Qualification
               </NavLink>
             </li>
 

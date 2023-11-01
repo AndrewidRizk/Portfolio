@@ -9,7 +9,7 @@ function Insta() {
   return (
     <div className="card3">
         <div class="card-inner">
-        <div class="card-front">
+        <div class="card-front3">
         <AiOutlineInstagram  className="card-icon2"/>
          </div>
      <div class="card-back">

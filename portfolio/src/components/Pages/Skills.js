@@ -6,9 +6,10 @@ import { TfiHummer } from "react-icons/tfi";
 import { FaRegGrinAlt } from "react-icons/fa";
 import Masonry from './components/Introduction.tsx';
 import { FaArrowUp } from "react-icons/fa6";
+import { PiCertificateDuotone } from "react-icons/pi";
 import App from './components/Deck/deck.tsx';
 import MyTimeline from './components/Time_Line/line';
-
+import Yorku from './components/YorkU/Yorku';
 
 
 
@@ -89,8 +90,8 @@ export const Skills = () => {
           >
             
             <div>
-              <FaRegGrinAlt />
-              {isHoveringIntro && <span className="tooltip">{"                               "}Introduction</span>}
+              <PiCertificateDuotone />
+              {isHoveringIntro && <span className="tooltip">{"                               "}Certificates</span>}
             </div>
 
           </li>
@@ -113,8 +114,11 @@ export const Skills = () => {
           </li>
         </ul>
       </div>
-      <div ref={Up} className="photos"> 
-        <Masonry />
+     
+      <div ref={Up} className=""> 
+       
+        <Yorku />
+          
       </div>
 
    

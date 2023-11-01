@@ -2,6 +2,7 @@ import "./style.css";
 import React from 'react';
 import { AiFillLinkedin } from "react-icons/ai";
 import { SiLinkedin } from "react-icons/si";
+import picture from "./1676413577946.jpeg"
 function Linked() {
   return (
     <div className="card7">
@@ -25,7 +26,7 @@ function Linked() {
         <img
           className="artdeco-entity-image artdeco-entity-image--circle-4 profile-badge__content-profile-image"
           alt="Andrew Rizk"
-          src="https://media.licdn.com/dms/image/D4D03AQGm5cyPhbvRAg/profile-displayphoto-shrink_200_200/0/1676413577946?e=1693440000&amp;v=beta&amp;t=hAsdHbGzmXwfVYa8UslmS_uSluz6usZK18gxFhCf6OY"
+          src={picture}
         />
         <h3>
           <a

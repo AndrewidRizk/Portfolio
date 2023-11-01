@@ -22,7 +22,16 @@ export function Night() {
       <HTMLContent />
       <Title />
       <Shooting/>
-      <Resume />
+    </div>
+  );
+}
+
+export function Day() {
+  return (
+    <div className='App containers' >
+      <Cloud />
+      <Title1 />
+      <Shooting/>
     </div>
   );
 }
@@ -46,21 +55,12 @@ export function NightHome() {
   );
 }
 
-export function Day() {
-  return (
-    <div className='containers' >
-      <Cloud />
-      <Shooting/>
-      <Title1 />
-      <Resume />
-    </div>
-  );
-}
+
 
 export function DayHome() {
   return (
     <div >
-      <div className="container">
+      <div className="container ">
         
       <Router>
       <NavBar />

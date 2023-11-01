@@ -1,21 +1,37 @@
 .app {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .card-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .card {
-    width: 190px;
-    height: 254px;
-    border-radius: 30px;
-    background: #212121;
-    box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
-    margin: 10px; /* Optional margin between the cards */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.get-in-touch,
+.lets-be-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.linkedin-discord-github,
+.insta-face-snap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 253px;
+  height: 325px;
+  border-radius: 30px;
+  margin: 10px;
+}
