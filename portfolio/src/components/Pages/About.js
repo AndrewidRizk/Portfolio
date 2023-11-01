@@ -78,10 +78,10 @@ export const About = () => {
             </div>
 
           </li>
-
+{/*}
           <li>.</li>
           <li>.</li>
-
+          
           <li
             onClick={() => scrollToSection(Education)} className="link nav-item icon"
             onMouseOver={handleEduMouseOver}
@@ -91,10 +91,10 @@ export const About = () => {
               <BsFillBookFill />
               {isHoveringEdu && <span className="tooltip">{"                               "}Education</span>}
             </div>
-            
+          
 
           </li>
-
+  
           <li>.</li>
           <li>.</li>
 
@@ -109,7 +109,9 @@ export const About = () => {
             </div>
 
           </li>
+          {*/}
         </ul>
+        
       </div>
       <div ref={Up} className="photos"> 
         <Masonry />
@@ -119,17 +121,7 @@ export const About = () => {
         <h3>Introduction</h3>
       </div>
 
-      <div ref={Education} className="Education">
-        <h3>Education</h3>
-      </div>
-      <div className="Education">
-        <h1 className='cent' >Certificates</h1>
-        <App />
-      </div>
-
-      <div ref={Experiance} className="Experiance">
-        <MyTimeline />
-      </div>
+  
     </div>
   );
 };
