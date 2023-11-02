@@ -31,14 +31,12 @@ function NavBar() {
   }, []);
 
   return (
-    <nav className={toggle ? 'expanded ' : 'nav-menu'}>
-      <div className="nav-container wrapper header">
-        {windowWidth <= 768 && ( // Only show toggle icon on phones
-          <nav className={toggle ? 'expanded ' : 'nav-menu'}>
+    <nav className={toggle ? 'nav-container_expanded ' : 'nav-container_expanded2 nav-menu '}>
+      <div className="  wrapper header">
+        {windowWidth <= 1650 && ( // Only show toggle icon on phones
+          <nav className={toggle ? ' ' : 'nav-menu'}>
           
-            <div className='toggle-icon' onClick={handleToggle}>
-              {toggle ? <Icon icon={x} size={28} /> : <Icon icon={menu} size={30} />}
-            </div>
+          <div className="">
             <ul className='links dropdown'>
               {toggle && ( // Only render the links when toggle is true
                 <>
@@ -100,10 +98,14 @@ function NavBar() {
                 </>
               )}
             </ul>
-          
+            </div>
+          <div className='toggle-icon' onClick={handleToggle}>
+              {toggle ? <Icon icon={x} size={28} /> : <Icon icon={menu} size={30} />}
+            </div>
         </nav>
         )}
-        {windowWidth > 768 && ( // Render links only on larger screens
+        <div className="nav-container">
+        {windowWidth > 1650 && ( // Render links only on larger screens
           <ul className='links dropdown'>
             <li className="nav-item ">
               <NavLink
@@ -162,6 +164,7 @@ function NavBar() {
             </li>
           </ul>
         )}
+      </div>
       </div>
     </nav>
   );

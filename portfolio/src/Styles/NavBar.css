@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?Open+Sans&display=swap');
-@media (min-width: 769px) {
+@media (min-width: 1650px) {
 
   .starScreen .nav-container {
     background-color: #2B2B2B;
@@ -14,6 +14,7 @@
     border-radius: 25px;
     width: 90%; /* Adjust the width as desired */
     max-width: 40vw;
+    max-height: 3vw;
     font-family: monospace;
     color: #fff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -37,6 +38,7 @@
     border-radius: 25px;
     width: 90%; /* Adjust the width as desired */
     max-width: 40vw;
+    max-height: 3vw;
     font-family: monospace;
     color: #fff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -74,6 +76,9 @@
   height: 100%;
   border-bottom: 3px solid transparent;
 }
+
+
+
 
 .starScreen .nav-menu .links {
   list-style: none;
@@ -130,24 +135,16 @@
 
 .starScreen .nav-item:hover:after {
   width: 100%;
-  background: #ffdd40;
-  
-}
-
-.starScreen .nav-item .active {
-  color: #ffdd40;
-  border: 2px solid #ffdd40;
-  
-}
-
-.starScreen .nav-item:hover:after {
-  width: 100%;
   background: white;
+  
 }
+
 .starScreen .nav-item .active {
   color: white;
   border: 2px solid white;
+  
 }
+
 
 
 .nav-icon {
@@ -193,7 +190,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1650px) {
   .starScreen .nav-container {
     background-color: #2B2B2B;
     display: flex;
@@ -201,12 +198,13 @@
     align-items: center;
     font-size: 0.8rem;
     position: fixed;
-    left: 50%;
+    left: 5%;
     transform: translateX(-50%);
     z-index: 20;
     border-radius: 25px;
     width: 90%; /* Adjust the width as desired */
-    max-width: 40vw;
+    
+    max-height: 100%;
     font-family: monospace;
     color: #fff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -223,12 +221,13 @@
     align-items: center;
     font-size: 0.8rem;
     position: fixed;
-    left: 50%;
+    left: 5%;
     transform: translateX(-50%);
     z-index: 20;
     border-radius: 25px;
     width: 90%; /* Adjust the width as desired */
-    max-width: 40vw;
+    max-width: 10vw;
+    max-height: 100%;
     font-family: monospace;
     color: #fff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -239,14 +238,84 @@
     font-weight: bolder;
   
   }
+
+  .nav-container_expanded{
+    background-color: #8FB5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border-radius: 25px;
+    width: 90%; /* Adjust the width as desired */
+    max-height: 100%;
+    font-family: monospace;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    border: 2px solid #5B5B5B; /* Add the border */
+    font-weight: bolder;
+  } 
+
+  .starScreen .nav-container_expanded{
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border-radius: 25px;
+    width: 90%; /* Adjust the width as desired */
+    max-height: 100%;
+    font-family: monospace;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    border: 2px solid #5B5B5B; /* Add the border */
+    font-weight: bolder;
+  } 
+
+  .starScreen .nav-container_expanded2{
+    color: #d9d2c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    left: 5%;
+    transform: translateX(-50%);
+    z-index: 20;
+  } 
+
+  .nav-container_expanded2{
+    color: #8FB5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    left: 5%;
+    transform: translateX(-50%);
+    z-index: 20;
+  } 
   .starScreen .nav-links {
     color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    height: 100%;
-    border-bottom: 3px solid transparent;
+   
   }
   
+  .nav-links {
+    
+   
+  }
+ 
   .starScreen .nav-menu .links {
     list-style: none;
     display: flex;
@@ -255,6 +324,7 @@
   }
 .nav-container .nav-menu {
   overflow: hidden; /* Add this to hide overflowing elements */
+  
 }
 
 .nav-container .nav-links {
@@ -270,11 +340,13 @@
   position: relative;
   transition: 0.5s all ease-in-out;
   top:0px;
+ 
 }
 
   .navbar{
     position: relative;
     transition: 0.5s all ease-in-out;
+
   }
 
   .navbar.expanded{
