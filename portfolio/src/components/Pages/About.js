@@ -1,13 +1,10 @@
 import React, { useRef, useMemo } from "react";
 import {useState} from 'react';
 import "./Styles/About.css";
-import { BsFillBookFill } from "react-icons/bs";
-import { TfiHummer } from "react-icons/tfi";
 import { FaRegGrinAlt } from "react-icons/fa";
 import Masonry from './components/Introduction.tsx';
 import { FaArrowUp } from "react-icons/fa6";
-import App from './components/Deck/deck.tsx';
-import MyTimeline from './components/Time_Line/line';
+
 
 
 

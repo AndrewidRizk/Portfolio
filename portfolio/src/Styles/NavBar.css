@@ -268,7 +268,6 @@
     justify-content: center;
     align-items: center;
     font-size: 0.8rem;
-    position: fixed;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
@@ -308,11 +307,15 @@
   } 
   .starScreen .nav-links {
     color: #fff;
-   
+    font-size: 24px; /* Adjust the font size to your preference */
+  line-height: 1.5; /* Adjust the line height to your preference */
+
   }
   
   .nav-links {
-    
+    font-size: 24px; /* Adjust the font size to your preference */
+    line-height: 1.5; /* Adjust the line height to your preference */
+  
    
   }
  
