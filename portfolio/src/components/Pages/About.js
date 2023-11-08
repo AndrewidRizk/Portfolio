@@ -1,5 +1,5 @@
 import React, { useRef, useMemo } from "react";
-import {useState} from 'react';
+import {useState, useEffect } from 'react';
 import "./Styles/About.css";
 import { FaRegGrinAlt } from "react-icons/fa";
 import Masonry from './components/Introduction.tsx';
@@ -53,6 +53,8 @@ export const About = () => {
     setIsHoveringExp(false);
   };
 
+  
+  
   return (
     <div className="About">
       <div className="Container">
@@ -85,7 +87,7 @@ export const About = () => {
 
       <div ref={Introduction} className="Introduction">
         <h3>Introduction</h3>
-        <div class="textbox-container content-container">
+        <div class="textbox-container content-container2">
             <div class="textbox1 left-paragraph">
         
               <p>I am Andrew Rizk, currently a third-year Computer Science Honours student at York University. My life combines various interests and qualities that have shaped my identity. I  enjoy reading, gaming, and coding. In addition, what sets me apart are my strengths in time management, leadership, self-learning, and a strong drive to achieve long-term goals.</p>
@@ -95,7 +97,7 @@ export const About = () => {
               
               </div>
               <div class="right-photo">
-              <img src={me} alt="Image on the left"></img>
+                <Slideshow/>
               </div>
         </div>
 
@@ -111,3 +113,93 @@ export const About = () => {
 /* Random Pics */
 
 
+
+const Slideshow = () => {
+  const [slideIndex, setSlideIndex] = useState(1);
+
+  useEffect(() => {
+    showSlides(slideIndex);
+  }, [slideIndex]);
+
+  const plusSlides = (n) => {
+    const newIndex = slideIndex + n;
+
+    if (newIndex > 3) {
+      // Wrap around to the first slide when reaching the end
+      setSlideIndex(1);
+    } else if (newIndex < 1) {
+      // Wrap around to the last slide when going previous from the first slide
+      setSlideIndex(3);
+    } else {
+      setSlideIndex(newIndex);
+    }
+  };
+
+  const currentSlide = (n) => {
+    setSlideIndex(n);
+  };
+
+  const showSlides = (n) => {
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) {
+      setSlideIndex(1);
+    }
+    if (n < 1) {
+      setSlideIndex(slides.length);
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  };
+
+  return (
+    <div className="slideshow-container">
+    <div className="mySlides fade">
+      <div className="numbertext">1 / 3</div>
+      <img
+        src={me}
+        style={{ width: '100%' }}
+      />
+      <div className="text">London, England</div>
+    </div>
+    <div className="mySlides fade">
+      <div className="numbertext">2 / 3</div>
+      <img
+        src={me}
+        style={{ width: '100%' }}
+      />
+      <div className="text">Sunset in Romania</div>
+    </div>
+    <div className="mySlides fade">
+      <div className="numbertext">3 / 3</div>
+      <img
+        src={me}
+        style={{ width: '100%' }}
+      />
+      <div className="text">New York, USA</div>
+    </div>
+    <a className="prev" onClick={() => plusSlides(-1)}>
+      &#10094;
+    </a>
+    <a className="next" onClick={() => plusSlides(1)}>
+      &#10095;
+    </a>
+    <br />
+    <div style={{ textAlign: 'center' }}>
+      <span className="dot" onClick={() => currentSlide(1)}></span>
+      <span className="dot" onClick={() => currentSlide(2)}></span>
+      <span className="dot" onClick={() => currentSlide(3)}></span>
+    </div>
+  </div>
+  );
+};
