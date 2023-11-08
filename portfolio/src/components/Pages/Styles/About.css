@@ -181,8 +181,68 @@ cursor: pointer;
     color: blue;
   
   }
+  /* Define the container for the text box */
+  .textbox-container {
+    margin: auto;
+    margin-top: 10px;
+    background-color: #18181b;
+    width: 95%;
+    overflow: hidden; /* To clear floated images */
+    border-radius: 20px; /* Add rounded corners */
+    
+  }
 
+  /* Define the text box on the left */
+  .textbox1 {
+    color: white;
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    width: calc(100% - 200px); /* Adjust the width based on image size */
+    float: left;
+  }
 
+  /* Define images on the right (you can customize this for your specific images) */
+  .textbox1 img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners to images */
+    float: right; /* Float the image to the right */
+  }
 
+  /* Make text size responsive to the viewport width */
+  .textbox1 p {
+    font-size: 1.5vw; /* Adjust this as needed */
+  }
+
+    /* Define the container for the layout */
+    .content-container {
+      background-color: #18181b;
+      width: 95%;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+      padding: 20px;
+    }
+  
+    /* Define the paragraph on the left */
+    .left-paragraph {
+      color: white;
+      flex: 1;
+    }
+  
+    /* Define the photo on the right (you can customize this for your specific image) */
+    .right-photo {
+      flex: 1;
+      text-align: right;
+    }
+  
+    /* Style the image */
+    .right-photo img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px; /* Add rounded corners to the image */
+    }
   
 }

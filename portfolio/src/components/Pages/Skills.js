@@ -66,8 +66,7 @@ export const Skills = () => {
         <FaArrowUp />
           </li>
           
-          <li>{"  ."}</li>
-          <li>.</li>
+          
          
           <li
             onClick={() => scrollToSection(Education)} className="link nav-item icon"
@@ -82,8 +81,7 @@ export const Skills = () => {
 
           </li>
            
-          <li>.</li>
-          <li>.</li>
+          
           <li onClick={() => scrollToSection(Certificates)} className="link nav-item icon"
             onMouseOver={handleIntroMouseOver}
             onMouseOut={handleIntroMouseOut}
@@ -98,8 +96,7 @@ export const Skills = () => {
 
           
           
-          <li>.</li>
-          <li>.</li>
+          
 
           <li
             onClick={() => scrollToSection(Experiance)} className="link nav-item icon"

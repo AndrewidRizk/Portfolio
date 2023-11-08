@@ -12,13 +12,15 @@ import { Skills } from "./components/Pages/Skills";
 import { Contact } from "./components/Pages/Contact";
 import { Projects } from "./components/Pages/Projects";
 import { HiOutlineDocumentText } from "react-icons/hi";
-
-
+import { useEffect } from "react";
+import Loader from './components/Pages/components/Loader/loader.js';
 
 
 export function Night() {
-  return (
+    
+  return  (
     <div className="App containers ">
+  
       <HTMLContent />
       <Title />
       <Shooting/>
@@ -29,6 +31,7 @@ export function Night() {
 export function Day() {
   return (
     <div className='App containers' >
+
       <Cloud />
       <Title1 />
       <Shooting/>
@@ -123,7 +126,22 @@ export default function App() {
     setIsNightTheme(!isNightTheme);
   };
 
-  return (
+  // loader state
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Let create async method to fetch fake data
+  useEffect(() => {
+    const fakeDataFetch = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 4000);
+    };
+
+    fakeDataFetch();
+  }, []);
+  return isLoading ?(
+    <Loader />
+    ) : (
     
     
       <div className={isNightTheme ? 'night-theme' : 'day-theme'}>
