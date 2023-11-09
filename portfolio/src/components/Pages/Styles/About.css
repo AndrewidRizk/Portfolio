@@ -213,8 +213,20 @@ cursor: pointer;
     font-size: 1.5vw; /* Adjust this as needed */
   }
 
-    .content-container2 {
+    .starScreen .content-container2 {
       background-color: #18181b;
+      font-family: monospace;
+      width: 95%;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .content-container2 {
+      background-color: #8FB5F5;
+      font-family: monospace;
       width: 95%;
       margin: 20px auto;
       display: flex;
@@ -225,10 +237,14 @@ cursor: pointer;
     }
   
     .left-paragraph {
-      color: white;
+      color: #1868f1;
       flex: 1;
     }
   
+    .starScreen .left-paragraph {
+      color: white;
+      flex: 1;
+    }
 
     .right-photo {
       flex: 1;
@@ -246,7 +262,8 @@ cursor: pointer;
     * {
       box-sizing: border-box
     }
-    body {
+    /* starting here ***********************************************************************************************/
+        body {
       font-family: Verdana, sans-serif;
       margin: 0
     }
@@ -271,7 +288,6 @@ cursor: pointer;
       margin-top: -22px;
       color: white;
       font-weight: bold;
-      font-size: 18px;
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
       user-select: none;
@@ -291,11 +307,9 @@ cursor: pointer;
     }
     .text {
       color: #ffffff;
-      font-size: 15px;
       padding: 8px 12px;
       position: absolute;
       bottom: 8px;
-      width: 100%;
       text-align: center;
     }
     .numbertext {
@@ -315,38 +329,11 @@ cursor: pointer;
       display: inline-block;
       transition: background-color 0.6s ease;
     }
-    .active,
+    .active1,
     .dot:hover {
       background-color: #111111;
     }
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-    @-webkit-keyframes fade {
-      from {
-        opacity: .4
-      }
-      to {
-        opacity: 1
-      }
-    }
-    @keyframes fade {
-      from {
-        opacity: .4
-      }
-      to {
-        opacity: 1
-      }
-    }
-    @media only screen and (max-width: 300px) {
-      .prev,
-      .next,
-      .text {
-        font-size: 11px
-      }
-    }
+    
+   
    
 }
