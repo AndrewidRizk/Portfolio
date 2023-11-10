@@ -270,6 +270,15 @@ cursor: pointer;
     .mySlides {
       display: none
     }
+    .mySlides1 {
+      display: none
+    }
+    .mySlides2 {
+      display: none
+    }
+    .mySlides3 {
+      display: none
+    }
     img {
       vertical-align: middle;
     }
@@ -320,6 +329,36 @@ cursor: pointer;
       top: 0;
     }
     .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #999999;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .dot1 {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #999999;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .dot2 {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #999999;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .dot3 {
       cursor: pointer;
       height: 15px;
       width: 15px;

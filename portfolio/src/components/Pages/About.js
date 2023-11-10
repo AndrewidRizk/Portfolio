@@ -6,16 +6,17 @@ import Masonry from './components/Introduction.tsx';
 import { FaArrowUp } from "react-icons/fa6";
 import {IoEllipsisVerticalOutline} from "react-icons/io5";
 import me from "./components/photos/WhatsApp.jpeg"
-
+import { MdInsertPhoto } from "react-icons/md";
+import Aboutme from './AboutMe/Aboutme.js';
 
 
 
 
 export const About = () => {
   const Up = useRef(null);
-  const Introduction = useRef(null);
-  const Education = useRef(null);
-  const Experiance = useRef(null);
+  const Introduction1 = useRef(null);
+  const photos = useRef(null);
+
 
   const scrollToSection = (elementRef) => {
     if (elementRef && elementRef.current) {
@@ -66,26 +67,44 @@ export const About = () => {
 
           <li></li>
           <li></li>
-          <li onClick={() => scrollToSection(Introduction)} className="link nav-item icon"
-            onMouseOver={handleIntroMouseOver}
-            onMouseOut={handleIntroMouseOut}
-          >
-            
-            <div>
-              <FaRegGrinAlt />
-              {isHoveringIntro && <span className="tooltip">{"                               "}Introduction</span>}
-            </div>
+          
+              <li onClick={() => scrollToSection(photos)} className="link nav-item icon"
+                onMouseOver={handleIntroMouseOver}
+                onMouseOut={handleIntroMouseOut}>
+                  <div>
+            <MdInsertPhoto />
+            {isHoveringIntro && <span className="tooltip">{"                               "}Photos</span>}
+                </div>
+              </li>
 
-          </li>
+          <li></li>
+          <li></li>
+              <li onClick={() => scrollToSection(Introduction1)} className="link nav-item icon"
+                onMouseOver={handleEduMouseOver}
+                onMouseOut={handleEduMouseOut}
+              >
+                
+                <div>
+                  <FaRegGrinAlt />
+                  {isHoveringEdu && <span className="tooltip">{"                               "}Introduction</span>}
+                </div>
+
+              </li>
 
         </ul>
         
       </div>
-      <div ref={Up} className="photos"> 
+      <div ref={Up} className="up"> 
+          <Aboutme/>
+      </div>
+
+      <div ref={photos} className="photos"> 
         <Masonry />
       </div>
 
-      <div ref={Introduction} className="Introduction">
+
+
+      <div ref={Introduction1} className="Introduction">
         <h3>Introduction</h3>
         <div class="textbox-container content-container2">
             <div class="textbox1 left-paragraph">
@@ -114,7 +133,7 @@ export const About = () => {
              
               </div>
               <div class="right-photo">
-                <Slideshow2/>
+                <Slideshow3/>
               </div>
         </div>
         <div class="textbox-container content-container2">
@@ -124,7 +143,7 @@ export const About = () => {
              
               </div>
               <div class="right-photo">
-                <Slideshow2/>
+                <Slideshow4/>
               </div>
         </div>
               
@@ -235,93 +254,285 @@ const Slideshow = () => {
 
 
 const Slideshow2 = () => {
-  const [slideIndex, setSlideIndex] = useState(1);
+  const [slideIndex1, setslideIndex1] = useState(1);
 
   useEffect(() => {
-    showSlides(slideIndex);
-  }, [slideIndex]);
+    showSlides2(slideIndex1);
+  }, [slideIndex1]);
 
-  const plusSlides = (n) => {
-    const newIndex = slideIndex + n;
+  const plusSlides2 = (n) => {
+    const newIndex1 = slideIndex1 + n;
 
-    if (newIndex > 3) {
+    if (newIndex1 > 3) {
       // Wrap around to the first slide when reaching the end
-      setSlideIndex(1);
-    } else if (newIndex < 1) {
+      setslideIndex1(1);
+    } else if (newIndex1 < 1) {
       // Wrap around to the last slide when going previous from the first slide
-      setSlideIndex(3);
+      setslideIndex1(3);
     } else {
-      setSlideIndex(newIndex);
+      setslideIndex1(newIndex1);
     }
   };
 
-  const currentSlide = (n) => {
-    setSlideIndex(n);
+  const currentSlide2 = (n) => {
+    setslideIndex1(n);
   };
 
-  const showSlides = (n) => {
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
+  const showSlides2 = (n) => {
+    const slides1 = document.getElementsByClassName("mySlides1");
+    const dots1 = document.getElementsByClassName("dot1");
 
-    if (n > slides.length) {
-      setSlideIndex(1);
+    if (n > slides1.length) {
+      setslideIndex1(1);
     }
     if (n < 1) {
-      setSlideIndex(slides.length);
+      setslideIndex1(slides1.length);
     }
 
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    for (let i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";
     }
 
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active1", "");
+    for (let i = 0; i < dots1.length; i++) {
+      dots1[i].className = dots1[i].className.replace(" active1", "");
     }
 
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active1";
+    slides1[slideIndex1 - 1].style.display = "block";
+    dots1[slideIndex1 - 1].className += " active1";
   };
 
   return (
     <div className="slideshow-container">
-    <div className="mySlides fade">
-      <div className="numbertext">1 / 3</div>
-      <img
-        src={me}
-        style={{ width: '100%' }}
-      />
-      <div className="text">London, England</div>
-    </div>
-    <div className="mySlides fade">
-      <div className="numbertext">2 / 3</div>
-      <img
-        src={me}
-        style={{ width: '100%' }}
-      />
-      <div className="text">Sunset in Romania</div>
-    </div>
-    <div className="mySlides fade">
-      <div className="numbertext">3 / 3</div>
-      <img
-        src={me}
-        style={{ width: '100%' }}
-      />
-      <div className="text">New York, USA</div>
-    </div>
-    <a className="prev" onClick={() => plusSlides(-1)}>
-      &#10094;
-    </a>
-    <a className="next" onClick={() => plusSlides(1)}>
-      &#10095;
-    </a>
-    <br />
-    <div style={{ textAlign: 'center' }}>
-      <span className="dot" onClick={() => currentSlide(1)}></span>
-      <span className="dot" onClick={() => currentSlide(2)}></span>
-      <span className="dot" onClick={() => currentSlide(3)}></span>
-    </div>
+      <div className="mySlides1 fade">
+        <div className="numbertext">1 / 3</div>
+        <img
+          src={me}
+          style={{ width: '100%' }}
+        />
+        <div className="text">London, England</div>
+      </div>
+
+      <div className="mySlides1 fade">
+        <div className="numbertext">2 / 3</div>
+        <img
+          src={me}
+          style={{ width: '100%' }}
+        />
+        <div className="text">Sunset in Romania</div>
+      </div>
+
+      <div className="mySlides1 fade">
+        <div className="numbertext">3 / 3</div>
+        <img
+          src={me}
+          style={{ width: '100%' }}
+        />
+        <div className="text">New York, USA</div>
+      </div>
+      
+      <a className="prev" onClick={() => plusSlides2(-1)}>
+        &#10094;
+      </a>
+      <a className="next" onClick={() => plusSlides2(1)}>
+        &#10095;
+      </a>
+      <br />
+      <div style={{ textAlign: 'center' }}>
+        <span className="dot1" onClick={() => currentSlide2(1)}></span>
+        <span className="dot1" onClick={() => currentSlide2(2)}></span>
+        <span className="dot1" onClick={() => currentSlide2(3)}></span>
+      </div>
   </div>
   );
 };
 
 
+
+
+const Slideshow3 = () => {
+  const [slideIndex1, setslideIndex1] = useState(1);
+
+  useEffect(() => {
+    showSlides2(slideIndex1);
+  }, [slideIndex1]);
+
+  const plusSlides2 = (n) => {
+    const newIndex1 = slideIndex1 + n;
+
+    if (newIndex1 > 3) {
+      // Wrap around to the first slide when reaching the end
+      setslideIndex1(1);
+    } else if (newIndex1 < 1) {
+      // Wrap around to the last slide when going previous from the first slide
+      setslideIndex1(3);
+    } else {
+      setslideIndex1(newIndex1);
+    }
+  };
+
+  const currentSlide2 = (n) => {
+    setslideIndex1(n);
+  };
+
+  const showSlides2 = (n) => {
+    const slides1 = document.getElementsByClassName("mySlides2");
+    const dots1 = document.getElementsByClassName("dot2");
+
+    if (n > slides1.length) {
+      setslideIndex1(1);
+    }
+    if (n < 1) {
+      setslideIndex1(slides1.length);
+    }
+
+    for (let i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots1.length; i++) {
+      dots1[i].className = dots1[i].className.replace(" active1", "");
+    }
+
+    slides1[slideIndex1 - 1].style.display = "block";
+    dots1[slideIndex1 - 1].className += " active1";
+  };
+
+  return (
+    <div className="slideshow-container">
+      <div className="mySlides2 fade">
+        <div className="numbertext">1 / 3</div>
+        <img
+          src={me}
+          style={{ width: '100%' }}
+        />
+        <div className="text">London, England</div>
+      </div>
+
+      <div className="mySlides2 fade">
+        <div className="numbertext">2 / 3</div>
+        <img
+          src={me}
+          style={{ width: '100%' }}
+        />
+        <div className="text">Sunset in Romania</div>
+      </div>
+
+      <div className="mySlides2 fade">
+        <div className="numbertext">3 / 3</div>
+        <img
+          src={me}
+          style={{ width: '100%' }}
+        />
+        <div className="text">New York, USA</div>
+      </div>
+      
+      <a className="prev" onClick={() => plusSlides2(-1)}>
+        &#10094;
+      </a>
+      <a className="next" onClick={() => plusSlides2(1)}>
+        &#10095;
+      </a>
+      <br />
+      <div style={{ textAlign: 'center' }}>
+        <span className="dot2" onClick={() => currentSlide2(1)}></span>
+        <span className="dot2" onClick={() => currentSlide2(2)}></span>
+        <span className="dot2" onClick={() => currentSlide2(3)}></span>
+      </div>
+  </div>
+  );
+};
+
+
+
+const Slideshow4 = () => {
+  const [slideIndex1, setslideIndex1] = useState(1);
+
+  useEffect(() => {
+    showSlides2(slideIndex1);
+  }, [slideIndex1]);
+
+  const plusSlides2 = (n) => {
+    const newIndex1 = slideIndex1 + n;
+
+    if (newIndex1 > 3) {
+      // Wrap around to the first slide when reaching the end
+      setslideIndex1(1);
+    } else if (newIndex1 < 1) {
+      // Wrap around to the last slide when going previous from the first slide
+      setslideIndex1(3);
+    } else {
+      setslideIndex1(newIndex1);
+    }
+  };
+
+  const currentSlide2 = (n) => {
+    setslideIndex1(n);
+  };
+
+  const showSlides2 = (n) => {
+    const slides1 = document.getElementsByClassName("mySlides3");
+    const dots1 = document.getElementsByClassName("dot3");
+
+    if (n > slides1.length) {
+      setslideIndex1(1);
+    }
+    if (n < 1) {
+      setslideIndex1(slides1.length);
+    }
+
+    for (let i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots1.length; i++) {
+      dots1[i].className = dots1[i].className.replace(" active1", "");
+    }
+
+    slides1[slideIndex1 - 1].style.display = "block";
+    dots1[slideIndex1 - 1].className += " active1";
+  };
+
+  return (
+    <div className="slideshow-container">
+      <div className="mySlides3 fade">
+        <div className="numbertext">1 / 3</div>
+        <img
+          src={me}
+          style={{ width: '100%' }}
+        />
+        <div className="text">London, England</div>
+      </div>
+
+      <div className="mySlides3 fade">
+        <div className="numbertext">2 / 3</div>
+        <img
+          src={me}
+          style={{ width: '100%' }}
+        />
+        <div className="text">Sunset in Romania</div>
+      </div>
+
+      <div className="mySlides3 fade">
+        <div className="numbertext">3 / 3</div>
+        <img
+          src={me}
+          style={{ width: '100%' }}
+        />
+        <div className="text">New York, USA</div>
+      </div>
+      
+      <a className="prev" onClick={() => plusSlides2(-1)}>
+        &#10094;
+      </a>
+      <a className="next" onClick={() => plusSlides2(1)}>
+        &#10095;
+      </a>
+      <br />
+      <div style={{ textAlign: 'center' }}>
+        <span className="dot3" onClick={() => currentSlide2(1)}></span>
+        <span className="dot3" onClick={() => currentSlide2(2)}></span>
+        <span className="dot3" onClick={() => currentSlide2(3)}></span>
+      </div>
+  </div>
+  );
+};

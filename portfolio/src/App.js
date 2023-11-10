@@ -16,11 +16,12 @@ import { useEffect } from "react";
 import Loader from './components/Pages/components/Loader/loader.js';
 
 
+
 export function Night() {
     
   return  (
     <div className="App containers ">
-  
+
       <HTMLContent />
       <Title />
       <Shooting/>
@@ -31,7 +32,6 @@ export function Night() {
 export function Day() {
   return (
     <div className='App containers' >
-
       <Cloud />
       <Title1 />
       <Shooting/>
