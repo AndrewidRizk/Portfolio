@@ -8,7 +8,7 @@ const Loader = () => {
     <div className="loader">
       <div className="image-wrapper">
         <Stars3 /> {/* Use the Stars3 component as a custom JSX element */}
-        <img src={logo} alt="Your Image" className="image" width="200" style={{ marginTop: '100px' }} />
+        <img src={logo} alt="Your Image" className="image" width="175" style={{ marginTop: '100px' }} />
       </div>
     </div>
   );

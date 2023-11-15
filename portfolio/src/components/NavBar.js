@@ -5,6 +5,7 @@ import { Icon } from 'react-icons-kit';
 import { menu } from 'react-icons-kit/feather/menu';
 import { x } from 'react-icons-kit/feather/x';
 import { HiOutlineHome } from "react-icons/hi";
+import Logo1 from "./Logos/Logo2.png.png";
 
 function NavBar() {
   const [toggle, setToggle] = useState(false);
@@ -107,56 +108,61 @@ function NavBar() {
         <div className="nav-container">
         {windowWidth > 769 && ( // Render links only on larger screens
           <ul className='links dropdown'>
-            <li className="nav-item ">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                <HiOutlineHome /> Home
-              </NavLink>
-            </li>
-            <li className="nav-item dropbtn">
+           
+            <li className="nav-item dropbtn linkItem">
               <NavLink
                 exact
                 to="/about"
                 activeClassName="active"
-                className="nav-links"
+                className="nav-links aboutme1 "
                 onClick={handleClick}
               >
                 About Me
               </NavLink>
             </li>
-            <li className="nav-item">
+
+            <li className="nav-item linkItem">
               <NavLink
                 exact
                 to="/skills"
                 activeClassName="active"
-                className="nav-links"
+                className="nav-links "
                 onClick={handleClick}
               >
                 Qualification
               </NavLink>
             </li>
-            <li className="nav-item">
+
+            <li className="nav-item ">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="LOGO"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                <img src={Logo1} alt="Logo" style={{ width: 40 }} />
+              </NavLink>
+            </li>
+
+            
+            <li className="nav-item linkItem">
               <NavLink
                 exact
                 to="/projects"
                 activeClassName="active"
-                className="nav-links"
+                className="nav-links "
                 onClick={handleClick}
               >
                 Projects
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item linkItem">
               <NavLink
                 exact
                 to="/contact"
                 activeClassName="active"
-                className="nav-links"
+                className="nav-links "
                 onClick={handleClick}
               >
                 Contact Me

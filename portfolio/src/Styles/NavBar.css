@@ -12,9 +12,7 @@
     transform: translateX(-50%);
     z-index: 20;
     border-radius: 25px;
-    width: 90%; /* Adjust the width as desired */
-    max-width: 40vw;
-    max-height: 3vw;
+    
     font-family: monospace;
     color: #fff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -36,9 +34,6 @@
     transform: translateX(-50%);
     z-index: 20;
     border-radius: 25px;
-    width: 90%; /* Adjust the width as desired */
-    max-width: 40vw;
-    max-height: 3vw;
     font-family: monospace;
     color: #fff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -73,26 +68,22 @@
   color: #fff;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  width: 200px; /* Set a fixed width in pixels */
+  max-width: 100%; /* Optionally, set a maximum width as a percentage of the parent */
   height: 100%;
   border-bottom: 3px solid transparent;
-}
-
-
-
-
-.starScreen .nav-menu .links {
-  list-style: none;
-  display: flex;
-  color: #d9d2c3;
-  cursor: pointer;
+  flex-shrink: 0; /* Prevent items from shrinking */
 }
 
 .nav-links {
   color: #1868f1;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  width: 200px; /* Set a fixed width in pixels */
+  max-width: 100%; /* Optionally, set a maximum width as a percentage of the parent */
   height: 100%;
   border-bottom: 3px solid transparent;
+  flex-shrink: 0; /* Prevent items from shrinking */
 }
 .nav-menu .links {
   list-style: none;
@@ -111,6 +102,12 @@
 .nav-item {
   line-height: 40px;
   margin-right: 1rem;
+}
+.linkItem {
+  margin-top: 0.5rem ;
+}
+.nav-item .aboutme1 {
+  margin-left:0.8rem ;
 }
 
 .nav-item:after {
@@ -142,10 +139,16 @@
 .starScreen .nav-item .active {
   color: white;
   border: 2px solid white;
-  
 }
 
-
+.nav-item  .LOGO{
+  width: 40; 
+  border: 10px solid #1868f1;
+}
+.starScreen .nav-item  .LOGO{
+  width: 40;
+  border: 10px solid white;
+}
 
 .nav-icon {
   display: none;
