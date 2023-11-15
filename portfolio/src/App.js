@@ -99,7 +99,7 @@ export function Title() {
     <div className="text title typewriter">
       <text className=''>
         Hello, Welcome to my website.
-        I'm Andrew Rizk, Fullstack Developer😁! 
+        I'm Andrew Rizk, Fullstack Developer 😁! 
       </text>
     </div>
   );
@@ -110,7 +110,7 @@ export function Title1() {
     <div className="text title1 typewriter">
       <text className=''>
         Hello, Welcome to my website.
-        I'm Andrew Rizk, Fullstack Developer😁!
+        I'm Andrew Rizk, Fullstack Developer 😁!
       </text>
     </div>
   );

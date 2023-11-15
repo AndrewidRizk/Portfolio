@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?Open+Sans&display=swap');
+@media (min-width: 1650px) {
 
   .starScreen .nav-container {
     background-color: #2B2B2B;
@@ -187,4 +188,188 @@
     margin: 15px 0;
     font-size: 24px;
   }
+}
 
+@media (max-width: 1650px) {
+  .starScreen .nav-container {
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    position: fixed;
+    left: 5%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border-radius: 25px;
+    width: 90%; /* Adjust the width as desired */
+    
+    max-height: 100%;
+    font-family: monospace;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    border: 2px solid #5B5B5B; /* Add the border */
+    font-weight: bolder;
+  }
+  .nav-container {
+    background-color: #8FB5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    position: fixed;
+    left: 5%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border-radius: 25px;
+    width: 90%; /* Adjust the width as desired */
+    max-width: 10vw;
+    max-height: 100%;
+    font-family: monospace;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    border: 2px solid #5B5B5B; /* Add the border */
+    font-weight: bolder;
+  
+  }
+
+  .nav-container_expanded{
+    background-color: #8FB5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border-radius: 25px;
+    width: 90%; /* Adjust the width as desired */
+    max-height: 100%;
+    font-family: monospace;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    border: 2px solid #5B5B5B; /* Add the border */
+    font-weight: bolder;
+  } 
+
+  .starScreen .nav-container_expanded{
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border-radius: 25px;
+    width: 90%; /* Adjust the width as desired */
+    max-height: 100%;
+    font-family: monospace;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    border: 2px solid #5B5B5B; /* Add the border */
+    font-weight: bolder;
+  } 
+
+  .starScreen .nav-container_expanded2{
+    color: #d9d2c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    left: 5%;
+    transform: translateX(-50%);
+    z-index: 20;
+  } 
+
+  .nav-container_expanded2{
+    color: #8FB5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    left: 5%;
+    transform: translateX(-50%);
+    z-index: 20;
+  } 
+  .starScreen .nav-links {
+    color: #fff;
+    font-size: 24px; /* Adjust the font size to your preference */
+  line-height: 1.5; /* Adjust the line height to your preference */
+
+  }
+  
+  .nav-links {
+    font-size: 24px; /* Adjust the font size to your preference */
+    line-height: 1.5; /* Adjust the line height to your preference */
+  
+   
+  }
+ 
+  .starScreen .nav-menu .links {
+    list-style: none;
+    display: flex;
+    color: #d9d2c3;
+    cursor: pointer;
+  }
+.nav-container .nav-menu {
+  overflow: hidden; /* Add this to hide overflowing elements */
+  
+}
+
+.nav-container .nav-links {
+  width: 100%; /* Update the width to ensure the links stay within the container */
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  max-width: 40vw;
+  text-align: center;
+  margin-right: 0.5rem;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+  top:0px;
+ 
+}
+
+  .navbar{
+    position: relative;
+    transition: 0.5s all ease-in-out;
+
+  }
+
+  .navbar.expanded{
+    height: 100vh;
+  }
+
+  .navbar.expanded .links{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .navbar.expanded .links li{
+    margin: 15px 0;
+    font-size: 24px;
+  }
+}
