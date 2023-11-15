@@ -33,7 +33,7 @@ function NavBar() {
   return (
     <nav className={toggle ? 'nav-container_expanded ' : 'nav-container_expanded2 nav-menu '}>
       <div className="  wrapper header">
-        {windowWidth <= 1650 && ( // Only show toggle icon on phones
+        {windowWidth <= 769 && ( // Only show toggle icon on phones
           <nav className={toggle ? ' ' : 'nav-menu'}>
           
           <div className="">
@@ -105,7 +105,7 @@ function NavBar() {
         </nav>
         )}
         <div className="nav-container">
-        {windowWidth > 1650 && ( // Render links only on larger screens
+        {windowWidth > 769 && ( // Render links only on larger screens
           <ul className='links dropdown'>
             <li className="nav-item ">
               <NavLink

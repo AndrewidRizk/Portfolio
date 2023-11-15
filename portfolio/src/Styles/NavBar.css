@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?Open+Sans&display=swap');
-@media (min-width: 1650px) {
+@media (min-width: 769px) {
 
   .starScreen .nav-container {
     background-color: #2B2B2B;
@@ -190,7 +190,7 @@
   }
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 769px) {
   .starScreen .nav-container {
     background-color: #2B2B2B;
     display: flex;
