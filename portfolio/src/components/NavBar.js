@@ -133,12 +133,12 @@ function NavBar() {
               </NavLink>
             </li>
 
-            <li className="nav-item ">
+            <li className="nav-item">
               <NavLink
                 exact
                 to="/"
                 activeClassName="LOGO"
-                className="nav-links"
+                className="nav-links2"
                 onClick={handleClick}
               >
                 <img src={Logo1} alt="Logo" style={{ width: 40 }} />

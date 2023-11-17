@@ -85,10 +85,21 @@
   border-bottom: 3px solid transparent;
   flex-shrink: 0; /* Prevent items from shrinking */
 }
+
+.nav-links2 {
+  color: #1868f1;
+  padding: 1.29rem 1rem;
+  width: 500px; /* Set a fixed width in pixels */
+  max-width: 100%; /* Optionally, set a maximum width as a percentage of the parent */
+  height: 100%;
+  border-bottom: 6px solid transparent;
+  flex-shrink: 0; /* Prevent items from shrinking */
+}
+
 .nav-menu .links {
   list-style: none;
   display: flex;
-  color: #1868f1;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -124,17 +135,17 @@
   width: 100%;
   background: #1868f1;
 }
+.starScreen .nav-item:hover:after {
+  width: 100%;
+  background: white;
+  
+}
 
  .nav-item .active {
   color: #1868f1;
   border: 2px solid #1868f1;
 }
 
-.starScreen .nav-item:hover:after {
-  width: 100%;
-  background: white;
-  
-}
 
 .starScreen .nav-item .active {
   color: white;
